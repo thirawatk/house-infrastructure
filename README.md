@@ -133,13 +133,15 @@ All containers run on **Node 1** (HP EliteDesk). OS/root on NVMe unless noted.
 | CT ID | Name | Purpose | Storage | Network |
 |-------|------|---------|---------|---------|
 | 101 | cloudflared | Cloudflare Tunnels (public → local) | NVMe | VLAN 20 |
-| 102 | technitium | Local DNS (ad-block + split-horizon) | NVMe | 10.10.20.22 |
+| 102 | technitiumdns | Local DNS (ad-block + split-horizon) | NVMe | 10.10.20.22 |
 | 103 | caddy | Production reverse proxy (.xyz → .lan) | NVMe | VLAN 20 |
-| 105 | jump-server | SSH bastion / management gateway | NVMe | VLAN 20 |
-| **301** | **hermes-agent** | **AI agent platform (5 profiles)** | **NVMe** | **VLAN 20** |
+| 105 | jump-ubuntu | SSH bastion / management gateway | NVMe | VLAN 20 |
+| **301** | **hermes-ubuntu** | **AI agent platform (5 profiles)** | **NVMe** | **VLAN 20** |
 | 401 | bentopdf | Self-hosted PDF editing | NVMe | VLAN 20 |
-| 402 | paperless-ngx | Document management engine | NVMe root / 1TB SATA data | VLAN 20 |
+| 402 | paperless | Document management engine (Paperless-NGX) | NVMe root / 1TB SATA data | VLAN 20 |
 | 403 | joplin-server | Private note sync backend | NVMe root / 1TB SATA data | VLAN 20 |
+| 404 | autocaliweb | Calibre-Web-Automated (eBook library + WebDAV) | NVMe + ssd-vault bind-mounts | 10.10.20.44 |
+| 501 | monitor | Infrastructure monitoring | NVMe | 10.10.20.51 |
 
 > **Note:** Heavy local LLM stacks (Ollama, Open WebUI) have been intentionally deprecated to preserve host compute resources.
 
@@ -148,12 +150,12 @@ All containers run on **Node 1** (HP EliteDesk). OS/root on NVMe unless noted.
 | Pool | Disk | Size | Purpose |
 |------|------|------|---------|
 | `local-e3000-512gb` | Hiksemi E3000 NVMe | 512 GB | OS, LXC root filesystems |
-| `ssd-vault` / `local-samsung-1tb` | Samsung EVO 960 SATA | 1 TB | App data, document storage, databases |
+| `ssd-vault` / `local-samsung-1tb` | Samsung EVO 960 SATA | 1 TB | App data, document storage, Calibre library, databases |
 
 ### Future
 
-- **LXC 404 (CWA):** WebDAV container with ssd-vault bind-mount (pre-existing, repurposed)
 - **Node 2 + DAS:** Frigate NVR with USB-C passthrough for CCTV recording
+- **Additional LXCs:** As needed — home automation hub, media server, backup target
 
 ---
 

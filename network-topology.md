@@ -152,7 +152,10 @@ Internet ──→ Technitium DNS (10.10.20.22)
 |----|--------|---------|
 | 10.10.10.1 | NanoPi R3S | Router/Gateway (VLAN 10) |
 | 10.10.20.1 | Router (VLAN 20 subif) | Gateway (VLAN 20) |
+| 10.10.20.11 | Proxmox Node 1 | Hypervisor host (pve1.271224.xyz.lan) |
 | 10.10.20.22 | LXC 102 | Technitium DNS |
+| 10.10.20.44 | LXC 404 | Autocaliweb (CWA) |
+| 10.10.20.51 | LXC 501 | Monitor |
 | 10.10.30.1 | Router (VLAN 30 subif) | Gateway (VLAN 30) |
 | 10.10.40.1 | Router (VLAN 40 subif) | Gateway (VLAN 40) |
 
