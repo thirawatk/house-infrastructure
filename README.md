@@ -70,7 +70,9 @@ ISP WAN
 - **Features:** Ad-blocking + split-horizon DNS
 - **Public domain:** `271224.xyz` via Cloudflare Tunnels (LXC 101)
 - **Internal domain:** `271224.xyz.lan` local resolution
-- **Reverse Proxy:** Caddy (LXC 103) — translates external `.xyz` to internal `.lan`
+  - `chat.271224.xyz.lan` → 10.10.20.32 (CT 302 Open WebUI, LAN-only)
+- **Reverse Proxy:** Caddy (LXC 103) — translates external `.xyz` to internal services
+- **Domain gotcha:** If a public domain has a local A record pointing to private IP, external users bypass the Cloudflare Tunnel → 502. Fix: use a different subdomain externally (e.g., `chatui.271224.xyz` instead of `chat.271224.xyz`).
 
 ### Wireless
 
@@ -136,14 +138,15 @@ All containers run on **Node 1** (HP EliteDesk). OS/root on NVMe unless noted.
 | 102 | technitiumdns | Local DNS (ad-block + split-horizon) | NVMe | 10.10.20.22 |
 | 103 | caddy | Production reverse proxy (.xyz → .lan) | NVMe | VLAN 20 |
 | 105 | jump-ubuntu | SSH bastion / management gateway | NVMe | VLAN 20 |
-| **301** | **hermes-ubuntu** | **AI agent platform (5 profiles)** | **NVMe** | **VLAN 20** |
-| 401 | bentopdf | Self-hosted PDF editing | NVMe | VLAN 20 |
+|| **301** | **hermes-ubuntu** | **AI agent platform (5 profiles)** | **NVMe** | **VLAN 20** |
+|| 302 | openwebui | Open WebUI for FA profile web access | NVMe | **10.10.20.32**, VLAN 20 |
+|| 401 | bentopdf | Self-hosted PDF editing | NVMe | VLAN 20 |
 | 402 | paperless | Document management engine (Paperless-NGX) | NVMe root / 1TB SATA data | VLAN 20 |
 | 403 | joplin-server | Private note sync backend | NVMe root / 1TB SATA data | VLAN 20 |
 | 404 | autocaliweb | Calibre-Web-Automated (eBook library + WebDAV) | NVMe + ssd-vault bind-mounts | 10.10.20.44 |
 | 501 | monitor | Infrastructure monitoring | NVMe | 10.10.20.51 |
 
-> **Note:** Heavy local LLM stacks (Ollama, Open WebUI) have been intentionally deprecated to preserve host compute resources.
+> **Note:** Heavy local LLM stacks (Ollama) have been intentionally deprecated to preserve host compute resources. Open WebUI (CT 302) connects to Hermes FA's API server instead.
 
 ### Storage Pools
 
@@ -221,4 +224,4 @@ Runs in **LXC 301** on Proxmox Node 1.
 
 ---
 
-*Last updated: 2026-06-01*
+*Last updated: 2026-06-04*

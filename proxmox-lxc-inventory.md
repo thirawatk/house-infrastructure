@@ -10,16 +10,17 @@ DNS: **10.10.20.22** (Technitium). Domain: **271224.xyz.lan**. Timezone: **Asia/
 
 | CT | Name | OS | Cores | RAM | Root | IP | Status |
 |----|------|-----|-------|-----|------|-----|--------|
-| 101 | cloudflared | Debian | 1 | 512M | 4G NVMe | dhcp | ✅ running |
-| 102 | technitiumdns | Debian | 1 | 512M | 4G NVMe | **10.10.20.22** | ✅ running |
-| 103 | caddy | Debian | 1 | 512M | 4G NVMe | dhcp | ✅ running |
-| 105 | jump-ubuntu | Debian | 1 | 512M | 4G NVMe | dhcp | ✅ running |
-| 301 | hermes-ubuntu | Ubuntu | 2 | 4096M | 8G NVMe | dhcp | ✅ running |
-| 401 | bentopdf | Debian | 1 | 1024M | 4G NVMe | dhcp | ✅ running |
-| 402 | paperless | Debian | 2 | 2048M | 8G NVMe + SATA bind | dhcp | ✅ running |
-| 403 | joplin-server | Debian | 1 | 1024M | 4G NVMe + SATA bind | dhcp | ✅ running |
-| 404 | autocaliweb | Debian | 1 | 2048M | 6G NVMe + SATA bind | **10.10.20.44** | ✅ running |
-| 501 | monitor | Ubuntu | 1 | 2048M | 8G NVMe | **10.10.20.51** | ✅ running |
+|| 101 | cloudflared | Debian | 1 | 512M | 4G NVMe | dhcp | ✅ running |
+|| 102 | technitiumdns | Debian | 1 | 512M | 4G NVMe | **10.10.20.22** | ✅ running |
+|| 103 | caddy | Debian | 1 | 512M | 4G NVMe | dhcp | ✅ running |
+|| 105 | jump-ubuntu | Debian | 1 | 512M | 4G NVMe | dhcp | ✅ running |
+|| 301 | hermes-ubuntu | Ubuntu | 2 | 4096M | 8G NVMe | dhcp | ✅ running |
+|| 302 | openwebui | Ubuntu | 2 | 2048M | 10G NVMe | **10.10.20.32** | ✅ running |
+|| 401 | bentopdf | Debian | 1 | 1024M | 4G NVMe | dhcp | ✅ running |
+|| 402 | paperless | Debian | 2 | 2048M | 8G NVMe + SATA bind | dhcp | ✅ running |
+|| 403 | joplin-server | Debian | 1 | 1024M | 4G NVMe + SATA bind | dhcp | ✅ running |
+|| 404 | autocaliweb | Debian | 1 | 2048M | 6G NVMe + SATA bind | **10.10.20.44** | ✅ running |
+|| 501 | monitor | Ubuntu | 1 | 2048M | 8G NVMe | **10.10.20.51** | ✅ running |
 
 ---
 
@@ -97,6 +98,22 @@ DNS: **10.10.20.22** (Technitium). Domain: **271224.xyz.lan**. Timezone: **Asia/
 | monitor | various (OpenRouter) | 2135517501 | Infrastructure monitoring |
 | financialanalyst | gemma-4-31b-it:free | 2135517501 + 8748834444 | Shared Tae + Nhoo |
 | **Memory** | Hindsight API | Per-user banks | PostgreSQL + pgvector |
+
+### CT 302 — Open WebUI
+
+| | |
+|---|---|
+| **Purpose** | Open WebUI — web interface for Hermes FA profile (and other LLM frontends) |
+| **OS** | Ubuntu 24.04 |
+| **CPU** | 2 cores |
+| **RAM** | 2048 MB |
+| **Storage** | NVMe (10GB) |
+| **Network** | Static IP **10.10.20.32**, VLAN 20 |
+| **Domain (external)** | `chatui.271224.xyz` (via Cloudflare Tunnel → Caddy → CT 302:3000) |
+| **Domain (internal)** | `chat.271224.xyz.lan` → 10.10.20.32 (Technitium DNS .lan A record) |
+| **Docker** | Open WebUI container + FA API server reverse proxy |
+
+> **Why `chatui` externally?** The original `chat.271224.xyz` had a local Technitium A record pointing to private IP (10.10.20.32), bypassing the Cloudflare Tunnel → external users got 502. `chatui.271224.xyz` has no local override → routes through Cloudflare Tunnel correctly.
 
 ### CT 401 — BentoPDF
 
@@ -202,13 +219,13 @@ VLAN 20 (Server Zone — 10.10.20.0/24)
      │                                   │+pgvector
      │                                   └────────┘
      │
-  ┌──┴──────────┐
-  │ Autocaliweb │
-  │  (404) CWA  │
-  │  .20.44     │
-  │  ssd-vault  │
-  │  bind-mount │
-  └─────────────┘
+     │  ┌─────────────┐    ┌──────────────┐
+     │  │ Open WebUI  │    │ Autocaliweb  │
+     │  │  (302)      │    │  (404) CWA   │
+     │  │  .20.32     │    │  .20.44      │
+     │  │  NVMe 10G   │    │  ssd-vault   │
+     │  └─────────────┘    │  bind-mount  │
+     │                     └──────────────┘
 ```
 
 ---
@@ -249,9 +266,10 @@ pct reboot <CTID>
 
 | IP | CT | Name | Purpose |
 |----|-----|------|---------|
-| 10.10.20.22 | 102 | technitiumdns | DNS server |
-| 10.10.20.44 | 404 | autocaliweb | Calibre-Web-Automated |
-| 10.10.20.51 | 501 | monitor | Infrastructure monitoring |
+|| 10.10.20.22 | 102 | technitiumdns | DNS server |
+|| 10.10.20.32 | 302 | openwebui | Open WebUI (chatui.271224.xyz) |
+|| 10.10.20.44 | 404 | autocaliweb | Calibre-Web-Automated |
+|| 10.10.20.51 | 501 | monitor | Infrastructure monitoring |
 
 > All other containers use DHCP. Consider assigning static IPs via DHCP reservations on the Technitium DNS/DHCP server for consistency.
 

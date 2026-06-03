@@ -106,18 +106,26 @@ Internet ──→ Technitium DNS (10.10.20.22)
 - **Storage:** NVMe
 - **Functions:**
   - Local domain: `271224.xyz.lan` → resolves internal IPs
+    - `chat.271224.xyz.lan` → 10.10.20.32 (CT 302 Open WebUI, LAN-only)
   - Ad-blocking: blocks known ad/malware domains
   - Forwarding: upstream DNS for external queries
   - Split-horizon: internal clients get local IPs, external get Cloudflare
+- **API token:** Use `?token=` parameter for programmatic access
+- **⚠️ Gotcha:** Never create a local A record for a subdomain that also needs to be served via Cloudflare Tunnel externally — local resolution bypasses the tunnel, causing 522 for external users. Use a different subdomain externally (e.g., `chatui` instead of `chat`).
 
 ### Caddy Reverse Proxy (LXC 103)
 
-- **Role:** Terminates TLS, proxies `271224.xyz` → internal `.lan` services
+- **Role:** Terminates TLS, proxies `*.271224.xyz` → internal services
 - **Upstream:** Cloudflare Tunnel (LXC 101) for public access
 - **Key mappings:**
-  - `hermes.271224.xyz` → Hermes gateway
-  - `joplin.271224.xyz` → Joplin Server (LXC 403)
-  - `paperless.271224.xyz` → Paperless-NGX (LXC 402)
+  - `hermes.271224.xyz` → CT 301:9119 (Hermes Dashboard SPA, direct)
+  - `monitor.271224.xyz` → CT 501:8080 (Grafana + dashboard pages)
+  - `chatui.271224.xyz` → CT 302:3000 (Open WebUI)
+  - `joplin.271224.xyz` → CT 403 (Joplin Server)
+  - `paperless.271224.xyz` → CT 402 (Paperless-NGX)
+- **Internal DNS:** `chat.271224.xyz.lan` → 10.10.20.32 (Technitium .lan zone, LAN-only)
+- **Reload:** `caddy reload --config /etc/caddy/Caddyfile` (NOT systemctl)
+- **⚠️ Domain gotcha:** `chat.271224.xyz` had a local A record → private IP → external users got 522. Fixed by using `chatui.271224.xyz` externally (no local override → routes through Cloudflare Tunnel).
 
 ### Cloudflare Tunnel (LXC 101)
 
@@ -153,9 +161,10 @@ Internet ──→ Technitium DNS (10.10.20.22)
 | 10.10.10.1 | NanoPi R3S | Router/Gateway (VLAN 10) |
 | 10.10.20.1 | Router (VLAN 20 subif) | Gateway (VLAN 20) |
 | 10.10.20.11 | Proxmox Node 1 | Hypervisor host (pve1.271224.xyz.lan) |
-| 10.10.20.22 | LXC 102 | Technitium DNS |
-| 10.10.20.44 | LXC 404 | Autocaliweb (CWA) |
-| 10.10.20.51 | LXC 501 | Monitor |
+|| 10.10.20.22 | LXC 102 | Technitium DNS |
+|| 10.10.20.32 | LXC 302 | Open WebUI (chatui.271224.xyz) |
+|| 10.10.20.44 | LXC 404 | Autocaliweb (CWA) |
+|| 10.10.20.51 | LXC 501 | Monitor |
 | 10.10.30.1 | Router (VLAN 30 subif) | Gateway (VLAN 30) |
 | 10.10.40.1 | Router (VLAN 40 subif) | Gateway (VLAN 40) |
 
