@@ -105,8 +105,7 @@ Internet ──→ Technitium DNS (10.10.20.22)
 - **Static IP:** 10.10.20.22
 - **Storage:** NVMe
 - **Functions:**
-  - Local domain: `271224.xyz.lan` → resolves internal IPs
-    - `chat.271224.xyz.lan` → 10.10.20.32 (CT 302 Open WebUI, LAN-only)
+  - Local domain: `271224.xyz.lan` → resolves internal IPs (no chatui record — it's internet-only)
   - Ad-blocking: blocks known ad/malware domains
   - Forwarding: upstream DNS for external queries
   - Split-horizon: internal clients get local IPs, external get Cloudflare
@@ -123,9 +122,9 @@ Internet ──→ Technitium DNS (10.10.20.22)
   - `chatui.271224.xyz` → CT 302:3000 (Open WebUI)
   - `joplin.271224.xyz` → CT 403 (Joplin Server)
   - `paperless.271224.xyz` → CT 402 (Paperless-NGX)
-- **Internal DNS:** `chat.271224.xyz.lan` → 10.10.20.32 (Technitium .lan zone, LAN-only)
+- **Internal DNS:** `271224.xyz.lan` zone for local resolution (no A record for chatui — it's internet-only via tunnel)
 - **Reload:** `caddy reload --config /etc/caddy/Caddyfile` (NOT systemctl)
-- **⚠️ Domain gotcha:** `chat.271224.xyz` had a local A record → private IP → external users got 522. Fixed by using `chatui.271224.xyz` externally (no local override → routes through Cloudflare Tunnel).
+- **⚠️ Domain gotcha:** `chat.271224.xyz` previously had a local A record → private IP → external users got 522. Fixed by using `chatui.271224.xyz` externally (no local override → routes through Cloudflare Tunnel). Lesson: never create a local A record for a subdomain that also needs Cloudflare Tunnel.
 
 ### Cloudflare Tunnel (LXC 101)
 

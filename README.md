@@ -70,7 +70,6 @@ ISP WAN
 - **Features:** Ad-blocking + split-horizon DNS
 - **Public domain:** `271224.xyz` via Cloudflare Tunnels (LXC 101)
 - **Internal domain:** `271224.xyz.lan` local resolution
-  - `chat.271224.xyz.lan` → 10.10.20.32 (CT 302 Open WebUI, LAN-only)
 - **Reverse Proxy:** Caddy (LXC 103) — translates external `.xyz` to internal services
 - **Domain gotcha:** If a public domain has a local A record pointing to private IP, external users bypass the Cloudflare Tunnel → 502. Fix: use a different subdomain externally (e.g., `chatui.271224.xyz` instead of `chat.271224.xyz`).
 

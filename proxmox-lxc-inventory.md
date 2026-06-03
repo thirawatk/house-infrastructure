@@ -110,10 +110,9 @@ DNS: **10.10.20.22** (Technitium). Domain: **271224.xyz.lan**. Timezone: **Asia/
 | **Storage** | NVMe (10GB) |
 | **Network** | Static IP **10.10.20.32**, VLAN 20 |
 | **Domain (external)** | `chatui.271224.xyz` (via Cloudflare Tunnel → Caddy → CT 302:3000) |
-| **Domain (internal)** | `chat.271224.xyz.lan` → 10.10.20.32 (Technitium DNS .lan A record) |
 | **Docker** | Open WebUI container + FA API server reverse proxy |
 
-> **Why `chatui` externally?** The original `chat.271224.xyz` had a local Technitium A record pointing to private IP (10.10.20.32), bypassing the Cloudflare Tunnel → external users got 502. `chatui.271224.xyz` has no local override → routes through Cloudflare Tunnel correctly.
+> **Why `chatui` externally?** The original `chat.271224.xyz` had a local Technitium A record pointing to private IP (10.10.20.32), bypassing the Cloudflare Tunnel → external users got 502. `chatui.271224.xyz` has no local override → routes through Cloudflare Tunnel correctly. No internal `.lan` record exists — chatui is internet-only.
 
 ### CT 401 — BentoPDF
 
