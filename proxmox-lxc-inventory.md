@@ -18,7 +18,6 @@ DNS: **10.10.20.22** (Technitium). Domain: **271224.xyz.lan**. Timezone: **Asia/
 || 302 | openwebui | Ubuntu | 2 | 2048M | 10G NVMe | **10.10.20.32** | ✅ running |
 || 401 | bentopdf | Debian | 1 | 1024M | 4G NVMe | dhcp | ✅ running |
 || 402 | paperless | Debian | 2 | 2048M | 8G NVMe + SATA bind | dhcp | ✅ running |
-|| 403 | joplin-server | Debian | 1 | 1024M | 4G NVMe + SATA bind | dhcp | ✅ running |
 || 404 | autocaliweb | Debian | 1 | 2048M | 6G NVMe + SATA bind | **10.10.20.44** | ✅ running |
 || 501 | monitor | Ubuntu | 1 | 2048M | 8G NVMe | **10.10.20.51** | ✅ running |
 
@@ -134,17 +133,6 @@ DNS: **10.10.20.22** (Technitium). Domain: **271224.xyz.lan**. Timezone: **Asia/
 | **Network** | VLAN 20 |
 | **Document Volume** | Bind-mounted from `ssd-vault` |
 
-### CT 403 — Joplin Server
-
-| | |
-|---|---|
-| **Purpose** | Private note syncing backend (OneNote replacement) |
-| **RAM** | 1024 MB |
-| **OS Storage** | NVMe (4GB) |
-| **Data Storage** | 1TB SATA SSD (`ssd-vault`) — database bind-mount |
-| **Network** | VLAN 20 |
-| **Clients** | Joplin mobile/desktop apps |
-
 ### CT 404 — Autocaliweb (CWA) 📚
 
 | | |
@@ -180,8 +168,8 @@ DNS: **10.10.20.22** (Technitium). Domain: **271224.xyz.lan**. Timezone: **Asia/
 | Storage Pool | CTs | Contents |
 |---|---|---|
 | `local-e3000-512gb` (NVMe) | 101, 102, 103, 105, 301, 401 | All OS roots |
-| `local-e3000-512gb` (NVMe) | 402, 403, 404, 501 | OS roots (larger) |
-| `local-samsung-1tb` (SATA ssd-vault) | 402, 403 | Paperless docs + Joplin database |
+| `local-e3000-512gb` (NVMe) | 402, 404, 501 | OS roots (larger) |
+| `local-samsung-1tb` (SATA ssd-vault) | 402 | Paperless docs |
 | `local-samsung-1tb` (SATA ssd-vault) | 404 | Calibre library + WebDAV sync |
 
 ---
@@ -199,8 +187,8 @@ VLAN 20 (Server Zone — 10.10.20.0/24)
      │              │                              │
      │    ┌─────────┼──────────┐                   │
      │    │         │          │              ┌────┴────┐
-     │  Paperless  Joplin   Monitor          Jump      BentoPDF
-     │  (402)     (403)     (501)           (105)     (401)
+     │  Paperless  Monitor          Jump      BentoPDF
+     │  (402)     (501)            (105)     (401)
      │    │         │       .20.51            │
      │    │    ssd-vault  NVMe              │
      │    │    bind-mount                   │
@@ -280,7 +268,6 @@ pct reboot <CTID>
 |------|--------|-----------|
 | LXC configs | `vzdump` (zstd, snapshot) | Weekly |
 | Paperless documents | `rsync` to external | Daily |
-| Joplin database | `pg_dump` | Daily |
 | Hindsight/PostgreSQL | `pg_dump` | Daily |
 | Calibre library | `rsync` (ssd-vault) | Daily |
 | Proxmox host config | `tar /etc/pve` | Weekly |
