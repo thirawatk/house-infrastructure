@@ -92,11 +92,12 @@ DNS: **10.10.20.22** (Technitium). Domain: **271224.xyz.lan**. Timezone: **Asia/
 | Profile | Model | Telegram ID | Special |
 |---------|-------|-------------|---------|
 | buddy | minimax/m2.5-free | 2135517501 | Primary orchestrator |
-| investor | various (OpenRouter) | 2135517501 | Investment analysis, multi-model |
-| trader | various (OpenRouter) | 2135517501 | Market monitoring |
-| monitor | various (OpenRouter) | 2135517501 | Infrastructure monitoring |
-| financialanalyst | gemma-4-31b-it:free | 2135517501 + 8748834444 | Shared Tae + Nhoo |
-| **Memory** | Hindsight API | Per-user banks | PostgreSQL + pgvector |
+| buddy | openrouter/owl-alpha | 2135517501 | Primary orchestrator |
+| investor | openrouter/owl-alpha | 2135517501 | Investment analysis, multi-model |
+| trader | openrouter/owl-alpha | 2135517501 | Market monitoring |
+| monitor | openrouter/owl-alpha | 2135517501 | Infrastructure monitoring |
+| financialanalyst | openrouter/owl-alpha | 2135517501 + 8748834444 | Shared Tae + Nhoo |
+| **Memory** | Hindsight API | Per-user banks | PostgreSQL + pgvector, BGE-M3 embeddings |
 
 ### CT 302 — Open WebUI
 

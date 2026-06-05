@@ -141,7 +141,6 @@ All containers run on **Node 1** (HP EliteDesk). OS/root on NVMe unless noted.
 || 302 | openwebui | Open WebUI for FA profile web access | NVMe | **10.10.20.32**, VLAN 20 |
 || 401 | bentopdf | Self-hosted PDF editing | NVMe | VLAN 20 |
 | 402 | paperless | Document management engine (Paperless-NGX) | NVMe root / 1TB SATA data | VLAN 20 |
-| 403 | joplin-server | Private note sync backend | NVMe root / 1TB SATA data | VLAN 20 |
 | 404 | autocaliweb | Calibre-Web-Automated (eBook library + WebDAV) | NVMe + ssd-vault bind-mounts | 10.10.20.44 |
 | 501 | monitor | Infrastructure monitoring | NVMe | 10.10.20.51 |
 
@@ -169,19 +168,20 @@ Runs in **LXC 301** on Proxmox Node 1.
 
 | Profile | User(s) | Purpose | Model |
 |---------|---------|---------|-------|
-| **buddy** | Tae | Primary agent, orchestrator | minimax/m2.5-free |
-| **investor** | Tae | Investment analysis, multi-model | various via OpenRouter |
-| **trader** | Tae | Market monitoring | various via OpenRouter |
-| **monitor** | Tae | Infrastructure monitoring | various via OpenRouter |
-| **financialanalyst** | Tae + Nhoo | Shared investment analysis | gemma-4-31b-it:free |
+| **buddy** | Tae | Primary agent, orchestrator | openrouter/owl-alpha |
+| **investor** | Tae | Investment analysis, multi-model | openrouter/owl-alpha |
+| **trader** | Tae | Market monitoring | openrouter/owl-alpha |
+| **monitor** | Tae | Infrastructure monitoring | openrouter/owl-alpha |
+| **financialanalyst** | Tae + Nhoo | Shared investment analysis | openrouter/owl-alpha |
 
 ### Memory System
 
 - **Provider:** Self-hosted Hindsight API (`127.0.0.1:8888`)
 - **Mode:** `local_external` with external PostgreSQL 16 + pgvector
+- **Embedding:** `BAAI/bge-m3` (1024-dim, multilingual, Thai + English support)
 - **Storage:** `ssd-vault` (dedicated volume)
-- **Banks:** Per-user isolation via Telegram ID mapping
-- **Status:** Fully self-hosted, **zero paid services** (Honcho decommissioned)
+- **Banks:** 7 banks via per-user Telegram ID隔离
+- **Hermes Version:** v0.14.0 (2026.5.16)
 
 ### Infrastructure Services
 
@@ -223,4 +223,4 @@ Runs in **LXC 301** on Proxmox Node 1.
 
 ---
 
-*Last updated: 2026-06-04*
+*Last updated: 2026-06-05*
