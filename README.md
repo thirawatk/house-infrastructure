@@ -180,7 +180,7 @@ Runs in **LXC 301** on Proxmox Node 1.
 - **Mode:** `local_external` with external PostgreSQL 16 + pgvector
 - **Embedding:** `BAAI/bge-m3` (1024-dim, multilingual, Thai + English support)
 - **Storage:** `ssd-vault` (dedicated volume)
-- **Banks:** 7 banks via per-user Telegram ID隔离
+- **Banks:** 7 banks via per-user Telegram ID isolation
 - **Hermes Version:** v0.14.0 (2026.5.16)
 
 ### Infrastructure Services
