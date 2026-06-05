@@ -18,7 +18,7 @@ DNS: **10.10.20.22** (Technitium). Domain: **271224.xyz.lan**. Timezone: **Asia/
 || 302 | openwebui | Ubuntu | 2 | 2048M | 10G NVMe | **10.10.20.32** | ✅ running |
 || 401 | bentopdf | Debian | 1 | 1024M | 4G NVMe | dhcp | ✅ running |
 || 402 | paperless | Debian | 2 | 2048M | 8G NVMe + SATA bind | dhcp | ✅ running |
-|| 404 | autocaliweb | Debian | 1 | 2048M | 6G NVMe + SATA bind | **10.10.20.44** | ✅ running |
+||| 404 | kavita | Debian | 1 | 2048M | 6G NVMe + SATA bind | **10.10.20.44** | ✅ running |
 || 501 | monitor | Ubuntu | 1 | 2048M | 8G NVMe | **10.10.20.51** | ✅ running |
 
 ---
@@ -208,9 +208,9 @@ VLAN 20 (Server Zone — 10.10.20.0/24)
      │                                   └────────┘
      │
      │  ┌─────────────┐    ┌──────────────┐
-     │  │ Open WebUI  │    │ Autocaliweb  │
-     │  │  (302)      │    │  (404) CWA   │
-     │  │  .20.32     │    │  .20.44      │
+Autocaliweb │    │  kavita     │
+  │  │  .20.32     │    │  (404)      │
+  │  │  NVMe 10G   │    │  Docker     │
      │  │  NVMe 10G   │    │  ssd-vault   │
      │  └─────────────┘    │  bind-mount  │
      │                     └──────────────┘
@@ -256,7 +256,7 @@ pct reboot <CTID>
 |----|-----|------|---------|
 || 10.10.20.22 | 102 | technitiumdns | DNS server |
 || 10.10.20.32 | 302 | openwebui | Open WebUI (chatui.271224.xyz) |
-|| 10.10.20.44 | 404 | autocaliweb | Calibre-Web-Automated |
+||| 10.10.20.44 | 404 | kavita | Kavita eBook server (Docker) |
 || 10.10.20.51 | 501 | monitor | Infrastructure monitoring |
 
 > All other containers use DHCP. Consider assigning static IPs via DHCP reservations on the Technitium DNS/DHCP server for consistency.
@@ -267,8 +267,10 @@ pct reboot <CTID>
 
 | What | Method | Frequency |
 |------|--------|-----------|
-| LXC configs | `vzdump` (zstd, snapshot) | Weekly |
-| Paperless documents | `rsync` to external | Daily |
-| Hindsight/PostgreSQL | `pg_dump` | Daily |
-| Calibre library | `rsync` (ssd-vault) | Daily |
-| Proxmox host config | `tar /etc/pve` | Weekly |
+|| LXC configs | `vzdump` (zstd, snapshot) to `ssd-vault-backup` | Weekly |
+|| Paperless documents | `rsync` to external | Daily |
+|| Hindsight/PostgreSQL | `pg_dump` | Daily |
+|| Kavita library | `rsync` (ssd-vault) | Daily |
+|| Proxmox host config | `tar /etc/pve` | Weekly |
+
+> **Note:** ZFS pools don't support `backup` content type for `vzdump`. Workaround: `/ssd-vault/backups/proxmox` directory added as `dir` storage type (`ssd-vault-backup`), supports backup content type and auto-prunes to keep-last=3.
