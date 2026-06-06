@@ -134,11 +134,11 @@ DNS: **10.10.20.22** (Technitium). Domain: **271224.xyz.lan**. Timezone: **Asia/
 | **Network** | VLAN 20 |
 | **Document Volume** | Bind-mounted from `ssd-vault` |
 
-### CT 404 — Autocaliweb (CWA) 📚
+### CT 404 — Kavita 📚
 
 | | |
 |---|---|
-| **Purpose** | Calibre-Web-Automated — eBook library management + WebDAV sync |
+| **Purpose** | Kavita eBook server — reading, OPDS, OneDrive sync |
 | **OS** | Debian (unprivileged, nesting=1, keyctl=1) |
 | **RAM** | 2048 MB |
 | **Swap** | 512 MB |
@@ -146,8 +146,21 @@ DNS: **10.10.20.22** (Technitium). Domain: **271224.xyz.lan**. Timezone: **Asia/
 | **Mount Points** | `mp0: /ssd-vault/calibre/library/` → `/mnt/calibre/library` |
 | | `mp1: /ssd-vault/calibre-sync/` → `/var/www/webdav` |
 | **Network** | Static IP **10.10.20.44**, VLAN 20, bridge=lan |
-| **Tags** | community-script, ebooks |
-| **Source** | [community-scripts/ProxmoxVE](https://github.com/community-scripts/ProxmoxVE) |
+| **Domain** | `kavita.271224.xyz` (Caddy → CT 404:5000) |
+| **Docker** | `jvmilazz0/kavita:0.8.4` (update to 0.9.0.x available) |
+| **Source** | Replaced Calibre-Web-Automated (CWA) on 2026-06-05 |
+
+#### Kavita + OneDrive Sync (2026-06-06)
+
+| | |
+|---|---|
+| **Source** | `onedrive:Personal_stuff/e-book/` (7.9GB, 580 files) |
+| **Local** | `/mnt/calibre/library/` (bind-mounted to container `/books`) |
+| **Tool** | rclone v1.74.2 |
+| **Schedule** | Every 6 hours via `/etc/cron.d/rclone-onedrive-sync` |
+| **Config** | `/root/.config/rclone/rclone.conf` — drive_id: `847FBA794A95EBF0`, drive_type: personal |
+| **Login** | lottez / Th!2awatKVT |
+| **Notes** | rclone 1.74+ requires `drive_id` for OneDrive personal. Get via Graph API `/me/drive`. Write config directly to file, NOT via `rclone config update` (re-triggers OAuth). Token JSON may be URL-encoded — use `urllib.parse.unquote()` first. |
 
 ### CT 501 — Monitor 📊
 
@@ -171,7 +184,7 @@ DNS: **10.10.20.22** (Technitium). Domain: **271224.xyz.lan**. Timezone: **Asia/
 | `local-e3000-512gb` (NVMe) | 101, 102, 103, 105, 301, 401 | All OS roots |
 | `local-e3000-512gb` (NVMe) | 402, 404, 501 | OS roots (larger) |
 | `local-samsung-1tb` (SATA ssd-vault) | 402 | Paperless docs |
-| `local-samsung-1tb` (SATA ssd-vault) | 404 | Calibre library + WebDAV sync |
+| `local-samsung-1tb` (SATA ssd-vault) | 404 | Kavita eBook library (synced from OneDrive) + WebDAV sync |
 
 ---
 
@@ -256,7 +269,7 @@ pct reboot <CTID>
 |----|-----|------|---------|
 || 10.10.20.22 | 102 | technitiumdns | DNS server |
 || 10.10.20.32 | 302 | openwebui | Open WebUI (chatui.271224.xyz) |
-||| 10.10.20.44 | 404 | kavita | Kavita eBook server (Docker) |
+|| 10.10.20.44 | 404 | kavita | Kavita eBook server (Docker) |
 || 10.10.20.51 | 501 | monitor | Infrastructure monitoring |
 
 > All other containers use DHCP. Consider assigning static IPs via DHCP reservations on the Technitium DNS/DHCP server for consistency.
@@ -270,7 +283,7 @@ pct reboot <CTID>
 || LXC configs | `vzdump` (zstd, snapshot) to `ssd-vault-backup` | Weekly |
 || Paperless documents | `rsync` to external | Daily |
 || Hindsight/PostgreSQL | `pg_dump` | Daily |
-|| Kavita library | `rsync` (ssd-vault) | Daily |
+|| Kavita library | rclone sync from OneDrive (source of truth) | Every 6 hours |
 || Proxmox host config | `tar /etc/pve` | Weekly |
 
 > **Note:** ZFS pools don't support `backup` content type for `vzdump`. Workaround: `/ssd-vault/backups/proxmox` directory added as `dir` storage type (`ssd-vault-backup`), supports backup content type and auto-prunes to keep-last=3.
