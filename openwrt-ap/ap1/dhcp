@@ -1,0 +1,101 @@
+
+config dhcp 'wan'
+	option interface 'wan'
+	option ignore '1'
+
+config odhcpd 'odhcpd'
+	option leasefile '/var/lib/odhcpd/dhcp.leases'
+	option leasetrigger '/usr/sbin/odhcpd-update'
+	option loglevel '4'
+	option piodir '/tmp/odhcpd-piodir'
+	option hostsdir '/tmp/hosts'
+
+config host
+	option name 'AirOffice'
+	option dns '1'
+	option mac '78:0F:77:25:89:72'
+
+config host
+	option name 'CCTV'
+	option dns '1'
+	option mac 'B4:A3:82:B3:1B:12'
+	option leasetime 'infinite'
+
+config host
+	option name 'AirLiving'
+	option dns '1'
+	option mac '78:0F:77:24:53:24'
+
+config host
+	option name 'AirBed'
+	option dns '1'
+	option mac '78:0F:77:24:9B:CE'
+
+config host
+	option name 'Hitron1'
+	option dns '1'
+	option mac '60:6C:63:2E:76:48'
+	option leasetime 'infinite'
+
+config host
+	option name 'Hitron2'
+	option dns '1'
+	option mac '60:6C:63:2E:69:7F'
+	option leasetime 'infinite'
+
+config dnsmasq
+	option rebind_protection '0'
+	option localservice '0'
+	option enable_tftp '1'
+	option leasefile '/tmp/dhcp.leases'
+	option tftp_root '/tmp/tftp'
+	option confdir '/etc/dnsmasq.d'
+	option domain 'nt.lan'
+	option local '/nt.lan/'
+	option add_local_fqdn '2'
+	list address '/20010activ.ibroadlink.com/#'
+	list address '/whiomplatform.hwcloudtest.cn/#'
+	list address '/.yingwangtech./#'
+	option nonwildcard '0'
+	option noresolv '1'
+	option cachesize '1000'
+	list server '/*.nt.lan/127.0.0.1'
+	list server '9.9.9.9'
+
+config host
+	option name 'TuyaSmartBulb'
+	option mac '70:89:76:E7:D4:8B'
+
+config host
+	option name 'SonyTV'
+	option mac '00:E0:4C:68:12:C6'
+
+config host
+	option name 'NhooIP'
+	option mac 'C2:2F:22:FC:97:C8'
+
+config host
+	option name 'nanopi-r3s'
+	option mac '9E:4F:A3:87:BB:66'
+
+config host
+	option name 'momphone'
+	list mac '8E:66:8A:72:B1:57'
+
+config host
+	option name 'cctv-front'
+	list mac '1C:4D:89:03:27:DB'
+
+config host
+	option name 'micamera'
+	list mac 'E4:AA:EC:8E:AD:BD'
+
+config host
+	option name 'openwrt-ax3600-1'
+	list mac '28:D1:27:4C:B2:D0'
+	option leasetime 'infinite'
+
+config host
+	option name 'Marantz5015'
+	list mac '00:06:78:B1:AF:4C'
+

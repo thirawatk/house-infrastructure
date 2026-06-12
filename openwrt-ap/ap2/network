@@ -1,0 +1,67 @@
+
+config interface 'loopback'
+	option device 'lo'
+	option proto 'static'
+	list ipaddr '127.0.0.1/8'
+
+config globals 'globals'
+	option dhcp_default_duid '0004a1fd8149746e48a7858eed12a042d43e'
+	option ula_prefix 'fd2a:6e78:b997::/48'
+	option packet_steering '1'
+
+config device
+	option name 'br-lan'
+	option type 'bridge'
+	list ports 'lan1'
+	list ports 'lan2'
+	list ports 'lan3'
+	list ports 'wan'
+
+config interface 'lan'
+	option device 'br-lan.1'
+	option proto 'static'
+	option multipath 'off'
+	list ipaddr '192.168.2.3/24'
+	option gateway '192.168.2.1'
+	option delegate '0'
+
+config bridge-vlan
+	option device 'br-lan'
+	option vlan '1'
+	list ports 'lan2'
+	list ports 'wan:u*'
+
+config bridge-vlan
+	option device 'br-lan'
+	option vlan '10'
+	list ports 'lan3:t'
+	list ports 'wan:t'
+
+config bridge-vlan
+	option device 'br-lan'
+	option vlan '20'
+	list ports 'lan3:t'
+	list ports 'wan:t'
+
+config bridge-vlan
+	option device 'br-lan'
+	option vlan '30'
+	list ports 'lan3:t'
+	list ports 'wan:t'
+
+config bridge-vlan
+	option device 'br-lan'
+	option vlan '40'
+	list ports 'lan3:t'
+	list ports 'wan:t'
+
+config interface 'trust'
+	option proto 'none'
+	option device 'br-lan.10'
+	option multipath 'off'
+
+config interface 'iot'
+	option proto 'none'
+	option device 'br-lan.40'
+	option multipath 'off'
+

@@ -1,0 +1,83 @@
+
+config interface 'loopback'
+	option device 'lo'
+	option proto 'static'
+	option ipaddr '127.0.0.1'
+	option netmask '255.0.0.0'
+
+config globals 'globals'
+	option packet_steering '1'
+	option dhcp_default_duid '0004e9ca756eb277451ab98a9355b6434cc6'
+
+config device
+	option name 'br-lan'
+	option type 'bridge'
+	option ipv6 '0'
+	list ports 'wan'
+	option vlan_filtering '1'
+
+config bridge-vlan
+	option device 'br-lan'
+	option vlan '10'
+	list ports 'wan:t'
+
+config bridge-vlan
+	option device 'br-lan'
+	option vlan '20'
+	list ports 'wan:t'
+
+config bridge-vlan
+	option device 'br-lan'
+	option vlan '30'
+	list ports 'wan:t'
+
+config bridge-vlan
+	option device 'br-lan'
+	option vlan '40'
+	list ports 'wan:t'
+
+config bridge-vlan
+	option device 'br-lan'
+	option vlan '1'
+	list ports 'wan:u'
+
+config interface 'mgmt'
+	option device 'br-lan.1'
+	option proto 'static'
+	option ipaddr '192.168.2.2'
+	option netmask '255.255.255.0'
+	list dns '10.10.10.1'
+	option gateway '192.168.2.1'
+
+config interface 'trust'
+	option device 'br-lan.10'
+	option proto 'none'
+
+config interface 'server'
+	option device 'br-lan.20'
+	option proto 'none'
+
+config interface 'streaming'
+	option device 'br-streaming'
+	option proto 'none'
+
+config interface 'iot'
+	option device 'br-lan.40'
+	option proto 'none'
+
+config device
+	option name 'wlan5'
+	option ipv6 '0'
+
+config device
+	option name 'wlan2'
+	option ipv6 '0'
+
+config device
+	option type 'bridge'
+	option name 'br-streaming'
+	list ports 'br-lan.30'
+	list ports 'lan1'
+	list ports 'lan2'
+	option multicast_querier '1'
+
