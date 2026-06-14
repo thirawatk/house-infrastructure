@@ -1,5 +1,7 @@
 # Hardware Inventory
 
+Last updated: 2026-06-14
+
 ## Compute
 
 ### Node 1 — Proxmox Virtualization Host
@@ -8,13 +10,14 @@
 |-----------|---------------|
 | **Model** | HP EliteDesk 800 G3 Mini |
 | **Form Factor** | Ultra Small Form Factor (USFF) |
-| **CPU** | Intel Core (x86) with Intel QuickSync iGPU |
-| **RAM** | *(check with `free -h`)* |
+| **CPU** | Intel Core i5-6500 (4C/4T, 3.2GHz, Skylake) with Intel QuickSync iGPU |
+| **RAM** | 32 GB |
 | **OS Storage** | 512GB Hiksemi E3000 M.2 NVMe SSD |
 | **Data Storage** | 1TB Samsung EVO 960 SATA SSD |
 | **NIC 1** | Onboard Intel 1 GbE → Proxmox management |
 | **NIC 2** | Expansion 2.5 GbE → Production LAN bridge |
 | **Hypervisor** | Proxmox VE |
+| **LXC Count** | 10 containers |
 | **Location** | Rack (cantilever shelf, side-by-side with Node 2) |
 
 #### Storage Pools
@@ -33,29 +36,50 @@
 
 ---
 
-### Node 2 — Frigate NVR (Planned)
+### Node 2 — Frigate NVR / HA Secondary
 
 | Attribute | Specification |
 |-----------|---------------|
 | **Model** | HP EliteDesk 800 G3 Mini (identical to Node 1) |
-| **CPU** | Intel Core with QuickSync (for Frigate AI) |
-| **OS Storage** | NVMe SSD (same spec as Node 1) |
-| **Data Storage** | External DAS via USB-C passthrough |
-| **Role** | Frigate NVR — AI object detection for CCTV |
+| **CPU** | Intel Core i5-6500 (4C/4T, 3.2GHz, Skylake) with Intel QuickSync |
+| **RAM** | 32 GB |
+| **OS Storage** | 256GB SATA SSD |
+| **Data Storage** | 2TB M.2 NVMe SSD |
+| **Role** | Frigate NVR (AI object detection for CCTV) + HA secondary node |
+| **GPU** | Intel QuickSync iGPU (passthrough for Frigate AI inference) |
 | **Location** | Rack (cantilever shelf, side-by-side with Node 1) |
 
-#### DAS Storage (Planned)
+---
 
-- **Type:** Multi-bay 2.5"/3.5" SATA desktop tower enclosure
-- **Connection:** USB-C → Proxmox USB passthrough to Frigate LXC/VM
-- **Mounted:** Vertically in rack (platter health)
-- **Purpose:** CCTV recording retention
+### DAS — External Storage (Idle)
+
+| Attribute | Specification |
+|-----------|---------------|
+| **Type** | Multi-bay 2.5"/3.5" SATA desktop tower enclosure |
+| **Capacity** | 4 TB |
+| **Connection** | USB-C → Proxmox USB passthrough |
+| **Status** | **Idle** — available for backup/bulk storage |
+| **Potential Uses** | Proxmox backup target, Frigate video retention, bulk data, Kavita library overflow |
+| **Location** | Rack (vertically mounted, platter health) |
+
+---
+
+## Cluster Resources Summary
+
+| Resource | Node 1 | Node 2 | Total |
+|----------|--------|--------|-------|
+| CPU | i5-6500 (4C/4T) | i5-6500 (4C/4T) | **8C/8T** |
+| RAM | 32 GB | 32 GB | **64 GB** |
+| NVMe | 512 GB | 2 TB | **2.5 TB** |
+| SATA SSD | 1 TB | 256 GB | **1.25 TB** |
+| DAS | — | — | **4 TB** |
+| **Total Storage** | | | **~7.75 TB** |
 
 ---
 
 ## Network
 
-### Router
+### Router / QDevice
 
 | Attribute | Specification |
 |-----------|---------------|
@@ -65,7 +89,8 @@
 | **RAM** | 1 GB DDR4 |
 | **NIC 1** | USB 3.0 → 1 GbE (WAN) |
 | **NIC 2** | Native 1 GbE (LAN/trunk) |
-| **Role** | Core router, firewall, inter-VLAN routing, DHCP |
+| **Primary Role** | Core router, firewall, inter-VLAN routing, DHCP |
+| **Secondary Role** | **QDevice** (corosync-qnetd) for 2-node Proxmox cluster quorum |
 | **Location** | Rack (cantilever shelf, next to ISP modem) |
 
 ### Managed Switch
@@ -152,7 +177,7 @@
 ### PDU
 
 | Attribute | Specification |
-|-----------|---|---|
+|-----------|---------------|
 | **Type** | Rackmount PDU |
 | **Outlets** | 8+ (to be confirmed) |
 | **Location** | Top of rack (1U) |

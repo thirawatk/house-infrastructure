@@ -1,8 +1,9 @@
 # Proxmox LXC Inventory
 
-All containers run on **Node 1** (HP EliteDesk 800 G3 Mini) under Proxmox VE.
+All containers run on **Node 1** (HP EliteDesk 800 G3 Mini, i5-6500, 32GB RAM) under Proxmox VE.
 All containers are **unprivileged** with **nesting=1, keyctl=1**.
 DNS: **10.10.20.22** (Technitium). Domain: **271224.xyz.lan**. Timezone: **Asia/Bangkok**.
+Last updated: 2026-06-14.
 
 ---
 
@@ -287,3 +288,25 @@ pct reboot <CTID>
 || Proxmox host config | `tar /etc/pve` | Weekly |
 
 > **Note:** ZFS pools don't support `backup` content type for `vzdump`. Workaround: `/ssd-vault/backups/proxmox` directory added as `dir` storage type (`ssd-vault-backup`), supports backup content type and auto-prunes to keep-last=3.
+
+---
+
+## Resource Allocation Summary
+
+**Node 1 total: 32GB RAM, i5-6500 (4C/4T)**
+
+| CT | Name | RAM | Cores |
+|----|------|-----|-------|
+| 101 | cloudflared | 512 MB | 1 |
+| 102 | technitiumdns | 512 MB | 1 |
+| 103 | caddy | 512 MB | 1 |
+| 105 | jump-ubuntu | 512 MB | 1 |
+| 301 | hermes-ubuntu | 4096 MB | 2 |
+| 302 | openwebui | 2048 MB | 2 |
+| 401 | bentopdf | 1024 MB | 1 |
+| 402 | paperless | 2048 MB | 2 |
+| 404 | kavita | 2048 MB | 1 |
+| 501 | monitor | 2048 MB | 1 |
+| **Total allocated** | | **17,408 MB (17 GB)** | **13 shares** |
+| **Host total** | | **32 GB** | **4 physical cores** |
+| **Headroom** | | **~15 GB free** | — |
