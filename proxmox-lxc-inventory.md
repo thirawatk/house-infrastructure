@@ -279,15 +279,24 @@ pct reboot <CTID>
 
 ## Backup Strategy
 
-| What | Method | Frequency |
-|------|--------|-----------|
-|| LXC configs | `vzdump` (zstd, snapshot) to `ssd-vault-backup` | Weekly |
-|| Paperless documents | `rsync` to external | Daily |
-|| Hindsight/PostgreSQL | `pg_dump` | Daily |
-|| Kavita library | rclone sync from OneDrive (source of truth) | Every 6 hours |
-|| Proxmox host config | `tar /etc/pve` | Weekly |
+> **⚠️ PREREQUISITE:** External backup storage not yet purchased. See [README.md](README.md#-action-required-backup-storage). Current backups are on-machine only — no hardware failure protection.
 
-> **Note:** ZFS pools don't support `backup` content type for `vzdump`. Workaround: `/ssd-vault/backups/proxmox` directory added as `dir` storage type (`ssd-vault-backup`), supports backup content type and auto-prunes to keep-last=3.
+| What | Method | Frequency | Destination |
+|------|--------|-----------|-------------|
+| LXC configs | `vzdump` (zstd, snapshot) | Weekly | Pending (external storage) |
+| Paperless documents | `rsync` | Daily | Pending (external storage) |
+| Hindsight/PostgreSQL | `pg_dump` | Daily | Pending (external storage) |
+| Kavita library | rclone sync from OneDrive (source of truth) | Every 6 hours | OneDrive (cloud) |
+| Proxmox host config | `tar /etc/pve` | Weekly | Pending (external storage) |
+
+### Post-Purchase Setup (TODO)
+
+Once external storage is purchased:
+1. Format and mount the drive on Node 1 (USB) or add to DAS on Node 2
+2. Create Proxmox backup storage entry (`pvesm add dir backup-storage /mnt/backup`)
+3. Configure `vzdump` cron to target the new storage
+4. Set up `rsync` jobs for Paperless docs + `pg_dump` for PostgreSQL
+5. Set retention policy: keep-last=7 for vzdump, keep-last=30 for pg_dump
 
 ---
 

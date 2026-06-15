@@ -158,6 +158,27 @@ All containers run on **Node 1** (HP EliteDesk). OS/root on NVMe unless noted.
 - **Node 2 + DAS:** Frigate NVR with USB-C passthrough for CCTV recording
 - **Additional LXCs:** As needed — home automation hub, media server, backup target
 
+### ⚠️ Action Required: Backup Storage
+
+**Status: NOT YET PURCHASED — blocking proper backup setup.**
+
+Current Node 1 has no physically separate backup destination. The 1TB SATA SSD (`ssd-vault`) holds active app data (Paperless, Kavita library) — it is NOT available as a backup target. Backing up to the same machine provides no protection against hardware failure.
+
+**What to buy (either option):**
+
+| Option | Capacity | Purpose | Approx. Cost |
+|--------|----------|---------|-------------|
+| **USB external HDD/SSD** (2-4TB) | 2-4 TB | Node 1 `vzdump` backup destination + `rsync` offsite | ~฿1,500-3,500 |
+| **Expand DAS** (add disk to Node 2 enclosure) | 4+ TB | Shared backup target across both nodes | ~฿2,000-4,000 |
+
+**What gets backed up:**
+- 10 LXC configs + root filesystems via `vzdump` (zstd compressed) — ~20-40GB total
+- Paperless documents via `rsync`
+- Hindsight/PostgreSQL via `pg_dump`
+- Proxmox host config via `tar /etc/pve`
+
+**Until purchased:** Backup strategy is limited to on-machine snapshots only. No protection against NVMe/SATA failure, theft, or physical damage.
+
 ---
 
 ## Hermes Agent Platform
