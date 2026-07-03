@@ -1,0 +1,259 @@
+================================================================================
+           US PRE-MARKET BRIEFING - MONDAY, JUNE 1, 2026
+           Data as of May 29, 2026 close | Futures as of June 1 AM
+================================================================================
+
+SECTION 1: EXECUTIVE SUMMARY
+================================================================================
+
+US equity futures are pointing to a positive open as markets return from the
+Memorial Day weekend. The S&P 500 and Nasdaq closed at record highs on Friday,
+buoyed by tech strength and a de-escalation in US-Iran tensions. However,
+significant macro risks persist: the Strait of Hormuz remains effectively
+closed, keeping oil prices elevated (~17% above year-ago levels for WTI),
+while Treasury yields remain stubbornly high with the 10Y at 4.45%. This week
+is packed with tier-1 economic data -- ISM Manufacturing (Monday), ISM Services
+(Wednesday), and Nonfarm Payrolls (Friday) -- any of which could rattle the
+market's comfortable narrative. The VIX at 15.32 reflects dangerous complacency
+given the geopolitical and inflationary backdrop.
+
+================================================================================
+SECTION 2: MARKET SNAPSHOT
+================================================================================
+
+Asset                          | Level          | Change       | Source
+-------------------------------|----------------|--------------|------------------
+S&P 500 Index                  | 7,580.06       | +16.43/+0.22%| Yahoo Finance
+Dow Jones Industrial Avg       | 51,032.46      | +363.49/+0.72%| Yahoo Finance
+Nasdaq Composite               | 26,972.62      | +55.15/+0.20%| Yahoo Finance
+Russell 2000                   | 2,919.34       | -17.23/-0.59%| Yahoo Finance
+S&P 500 Futures (ES=F)         | 7,595.75       | +14.00/+0.18%| Yahoo Finance
+Nasdaq 100 Futures (NQ=F)      | 30,405.25      | +98.25/+0.32%| Yahoo Finance
+Dow Futures (YM=F)             | 51,077.00      | +334.00/+0.66%| Yahoo Finance
+VIX                            | 15.32          | -0.42/-2.67%  | Yahoo Finance/Sidebar
+US 10-Year Treasury Yield      | 4.45%          | -0.01 bp     | TradingEconomics/AdvisorPerspectives
+US 2-Year Treasury Yield       | 3.98%          | -0.02 bp     | YCharts/AdvisorPerspectives
+10Y-2Y Spread                  | +0.47%         | --           | Calculated
+WTI Crude Oil                  | $87.36/bbl     | -1.54/-1.73% | TradingEconomics/Yahoo
+Brent Crude Oil                | $91.12/bbl     | -1.58/-1.70% | Yahoo Sidebar
+Gold (Spot)                    | $4,541/oz      | +1.02%       | TradingEconomics
+Copper                         | $6.36/lb       | -0.57%       | TradingEconomics
+US Dollar Index (DXY)          | 98.91          | -0.11%       | Yahoo Finance/Investing.com
+EUR/USD                        | ~1.127         | +0.09%       | Calculated from DXY
+Bitcoin                        | $73,416        | -$495/-0.67% | Yahoo Sidebar
+
+DATA NOTES:
+- Index levels, VIX, and commodity prices reflect Friday May 29, 2026 close
+- Futures prices reflect pre-market trading as of ~9:40 AM ET June 1
+- Treasury yields reflect May 29 market close per Advisor Perspectives
+- EUR/USD estimated from DXY basket composition; exact rate not confirmed
+
+================================================================================
+SECTION 3: KEY THEMES
+================================================================================
+
+**1. GEOPOLITIC: IRAN WAR / STRAIT OF HORMUZ -- THE DEFINING MACRO STORY**
+
+The 2026 US-Israel conflict with Iran has led to the closure of the Strait of Hormuz,
+the largest disruption to global energy supply since the 1970s oil crisis. The
+International Energy Agency has called it the "largest supply disruption" in history.
+Oil tanker traffic may NOT return to prewar levels even if a peace deal is reached
+(CNBC, May 30). This is not a temporary shock -- it is a structural repricing of
+energy that will feed into inflation for months, if not years. WTI at $87 and Brent
+at $91 remain ~44% and ~45% above year-ago levels respectively.
+
+**2. FED ON HOLD, BUT THE STORY IS SHIFTING**
+
+The CME FedWatch Tool shows ~99% probability of NO rate change at the June 16-17
+FOMC meeting. The Fed Funds rate sits at 3.50-3.75%. However, Morningstar reports
+70% odds of a RAISE by year-end -- the market is underpricing this risk. The
+communication gap between the Fed's sticky-inflation reality and the market's rate-cut
+hopes is the single biggest divergence in financial markets right now. Every Fed
+speaker this week will be parsed for hawkish hints.
+
+**3. STAGFLATIONARY GDP DATA IS A WARNING SHOT**
+
+US Q1 2026 GDP second estimate was revised DOWN to 1.6% annualized from the
+initial 2.0%, missing expectations. This follows Q4 2025's dismal 0.5%. The
+narrative was that Q1 "rebounded" -- but 1.6% is not a rebound, it is stagnation.
+Combine this with ISM Services prices at 70.7 (the highest readings since 2022-2023)
+and you get a stagflationary picture: weak growth + sticky inflation + rising energy
+costs = the Fed cannot cut regardless of what the market wants.
+
+**4. RECORD EQUITY VALUATIONS vs. REALITY CHECK**
+
+The S&P 500 closed at 7,580 (record high), the Dow at 51,032 (record high), and
+the Nasdaq at 26,972 (record high). The forward P/E on the S&P 500 is approximately
+22-23x, well above the historical average of ~16x. Professor Damodaran has
+repeatedly warned that at these levels, "there is no hiding" from a geopolitical
+or valuation shock. The VIX at 15.32 -- near 52-week lows-- tells you the market
+is not pricing in ANY disruption. This is the most dangerous kind of complacency:
+one where the headline news (Iran war, stagflation, high yields) is simply ignored.
+
+**5. GOLD'S STRUCTURAL BULL MARKET**
+
+Gold surged past $4,500/oz, now up ~38% year-over-year. This is NOT just a
+safe-haven bid from the Iran conflict. It is a structural shift: central banks
+(particularly China, India, and EM sovereigns) have been aggressively buying
+gold for 3+ years, de-dollarizing reserves, and retail demand is robust. Every
+dip is being bought. The fact that gold has held near $4,500 even as the dollar
+has not collapsed tells you this is a genuine store-of-demand story, not just
+dollar weakness.
+
+**6. DOLLAR WEAKNESS -- DXY BELOW 99**
+
+The DXY at 98.91 is down from its 2025 highs above 104-105 and briefly dipped
+below 98. This reflects: (a) rate-cut expectations weighing on the dollar, (b)
+re-US-Iran activity in Europe and Asia pushing EUR and safe havens higher, and
+(c) a broad diversification away from USD reserves. A weaker dollar is a
+double-edged sword: it supports US multinationals but imports inflation via
+more expensive commodities (denominated in USD) and makes Treasury purchases
+by foreigners less attractive, creating a potential negative feedback loop.
+
+**7. SMALL-CAP UNDERPERFORMANCE -- A HEALTH WARNING**
+
+The Russell 2000 closed Friday at 2,919, DOWN 0.59% on the day while large caps
+posted gains. Historically, small-cap underperformance during periods of
+geopolitical stress and high rates is a leading indicator of economic stress.
+Small caps are more domestic, more rate-sensitive, and less liquid than large
+caps -- their weakness suggests the market's near-term risk appetite is much
+thinner than the S&P 500's record close implies.
+
+================================================================================
+SECTION 4: WHAT TO WATCH TODAY (MONDAY, JUNE 1)
+================================================================================
+
+All times Eastern (ET) / Bangkok (BKK = ET+11):
+
+08:30 AM ET / 07:30 PM BBB  MBA Mortgage Applications (Weekly)
+                            -- Housing demand indicator; watch for rate sensitivity
+                              given 10Y at 4.45% and mortgage rates elevated.
+
+09:45 AM ET / 08:45 PM BKK  S&P Global US Manufacturing PMA (May -- Final)
+                            -- Revised estimate; preceded the ISM number.
+                              Markets will focus on divergence, if any.
+
+10:00 AM ET / 09:00 PM BKK  ISM MANUFACTURING PMI (May) -- ***TIER 1 EVENT***
+                            -- Prior: 52.7 | Consensus: ~51.5-52.0
+                            -- This is the big one today. A reading below 50
+                              (contraction) would torpedo the equity rally
+                              immediately. Watch the Prices Paid sub-index:
+                              it was 70.7 in the Services equivalent -- if
+                              it is above 65 here, inflation fears escalate.
+
+10:00 AM ET / 09:00 PM BKK  ISM Manufacturing New Orders (May)
+                            -- Leading component; prior was 54.1 (April)
+
+10:00 AM ET / 09:00 PM BKK  Construction Spending (April)
+                            -- Prior: -0.5% | Consensus: modest recovery expected
+                            -- Important for GDP composition; watch for
+                              tariff-reshoring impacts on construction.
+
+01:00 PM ET / 12:00 AM BKK  Dallas Fed Manufacturing Survey (May)
+                            -- Regional leading indicator; less impact but
+                              sets tone for industrial data this week.
+
+ONGOING: US-China Trade/Iran Diplomacy
+                            -- Trump-Xi summit developments remain wild cards.
+                              Any headline on tariffs or rare earths delivery
+                              could move markets sharply.
+
+================================================================================
+SECTION 5: THE HARD TRUTH -- A DAMODARAN LENS
+================================================================================
+
+Let me tell you what the S&P 500 at 7,580 is NOT telling you.
+
+**THE COMPLACENCY TAX IS BEING ASSED AND YOU PAYING IT**
+
+The VIX at 15.32 means the market is paying almost nothing to hedge. You are
+long gamma at the worst possible time. Damodaran has spent years modeling the
+relationship between equity risk premiums and VIX levels; at VIX=15, the implied
+equity risk premium is compressed to ~4-4.5%, which implies you are being
+compensated LESS for risk than at almost any point since 2000.
+
+Hedge funds are leveraged long. Passive flows are the marginal price-setting
+mechanism. This market has no sellers with conviction. That means when a
+seller finally shows up -- whether it comes from a negative ISM surprise, a
+Hawk Fed speaker, or a flare-up in the Strait -- the move will be sharp,
+fast, and your stop-loss will not protect you because the bid will simply vanish.
+
+**BULL CASE IS BULL**
+
+The bull case on US equities requires: (a) Iran war resolved quickly with oil
+returning to sub-$70, (b) Fed cutting rates in H2 2026, (c) AI capex translating
+into earnings growth, (d) soft landing. What is the probability all four happen?
+Assign each a 60% probability (which is generous) and you get 13%. That is your
+probability that the bull case plays out. The base case -- which is stagflation,
+sticky rates, moderating growth -- is far more likely and the market is NOT
+pricing it.
+
+**THE TREASURY MARKET IS SENDING A SIGNAL YOU ARE IGNORING**
+
+The 10Y at 4.45% and 2Y at 3.98% with a 47 basis point positive slope tells you
+the bond market is NOT buying the rate-cut narrative. The last time yields were
+at these levels with the equity market at record highs, it was Q3 2023 -- followed
+by a sharp Q4 selloff. Yes, rates eventually came down -- but the equity market
+sold off first. The bond market has been right more often than the equity market
+about the direction of economic fundamentals.
+
+**WHAT YOU SHOULD ACTUALLY DO**
+
+1. Trim long equity exposure by 5-10%. You are not selling the farm; you are
+   rebalancing a portfolio that has gone overweight equities via price
+   appreciation. Sell what has outperformed.
+
+2. De-emphasize mega-cap tech concentration. The equal-weight S&P 500 has
+   significantly underperformed the cap-weighted index. Your portfolio is
+   effectively a concentrated bet on 7-10 names disguised as "broad market
+   index funds."
+
+3. Add to real assets / energy. The Iran war is not over. The Strait of Hormuz
+   closure is structural, not cyclical. Energy equities are cheap relative to
+   spot oil prices -- they are pricing in a Iran resolution that may not come
+   for quarters. This is an asymmetric bet.
+
+4. Size gold position at 5-10% minimum. Gold at $4,500 is not expensive in a
+   world where central banks are de-dollarizing, wars are commodity-supply
+   disruptive, and fiat currencies are being debased globally. Gold is not a
+   hedge -- it is insurance against a broken system.
+
+5. Carry cash. This is not the time to be fully invested. 5-7% cash is not
+   "dead money" -- it is "dry powder" for a market correction that is
+   overdue. Every 5% correction in the last 12 months has been bought. Next
+   time may be different because the macro backdrop is deteriorating, not
+   improving.
+
+================================================================================
+SECTION 6: WEEKLY CALENDAR (JUNE 1-6, 2026)
+================================================================================
+
+Day     | Time (ET)  | Release                              | Impact
+--------|------------|--------------------------------------|----------
+MON     | 08:30 AM   | MBA Mortgage Applications            | Medium
+MON     | 09:45 AM   | S&P Global Mfg PMI (Final, May)      | Medium
+MON     | 10:00 AM   | ISM MANUFACTURING PMI (May)          | ***HIGH***
+MON     | 10:00 AM   | ISM Mfg New Orders (May)             | High
+MON     | 10:00 AM   | Construction Spending (April)        | Medium
+MON     | 01:00 PM   | Dallas Fed Mfg Survey (May)          | Low
+TUE     | 08:30 AM   | Factory Orders (April)               | Medium
+TUE     | 10:00 AM   | JOLTS Job Openings (April)           | High
+TUE     | --         | Fed Speakers (varying)               | Medium
+WED     | 08:15 ADP   | ADP Employment Report (May)          | High
+WED     | 10:00 AM   | ISM SERVICES PMI (May)               | ***HIGH***
+WED     | --         | Fed Beige Book (if scheduled)        | Medium
+THU     | 08:30 AM   | Initial Jobless Claims (Weekly)      | Medium
+THU     | --         | Trade Balance (April)*               | Medium
+FRI     | 08:30 AM   | NONFARM PAYROLLS (May)               | ***HIGH***
+FRI     | 08:30 AM   | Unemployment Rate (May)              | ***HIGH***
+FRI     | 08:30 AM   | Average Hourly Earnings (May)        | ***HIGH***
+
+*Trade balance date uncertain; verify specific release date.
+
+================================================================================
+DISCLAIMER: This briefing is for informational purposes only and does not
+constitute investment advice. Data sourced from Yahoo Finance, TradingEconomics,
+CNBC, CME FedWatch, Reuters, Advisor Perspectives, and other public sources.
+Cross-verification performed where possible. All data reflects most recent
+available as of compilation time (~9:40 AM ET, June 1, 2026).
+================================================================================

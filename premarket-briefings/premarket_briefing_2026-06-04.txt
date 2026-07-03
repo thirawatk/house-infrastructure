@@ -1,0 +1,203 @@
+================================================================================
+US PRE-MARKET BRIEFING - WEDNESDAY, JUNE 4, 2026
+================================================================================
+
+SECTION 1: EXECUTIVE SUMMARY
+================================================================================
+
+US stocks retreated from record highs on Wednesday as escalating hostilities in
+the Middle East -- including US military strikes on Iran and Iranian drone
+attacks on Gulf states -- sent oil prices surging past $100/bbl (Brent) and
+treasury yields climbing across the curve. The S&P 500 fell 0.4% to 7,580, the
+Dow dropped 0.8% to 50,890, and the Nasdaq slid 1.0% to 26,836. Pre-market
+futures are pointing to a mixed open, with S&P 500 futures at 7,563 (+0.03%
+implied open). Today's session is packed with labor market data: ADP private
+employment (8:15 AM ET), ISM Services PMI (10:00 AM ET), and JOLTS job openings
+(10:00 AM ET) -- all ahead of Friday's May nonfarm payrolls. The VIX sits at
+16.31, up 3.4% on the day, reflecting elevated but not panicked sentiment.
+
+================================================================================
+SECTION 2: MARKET SNAPSHOT
+================================================================================
+
+Asset                          | Level          | Change        | Source
+-------------------------------|----------------|---------------|------------------
+S&P 500 (Jun 3 close)         | 7,580          | -0.39%        | Trading Economics
+Dow Jones (Jun 3 close)        | 50,890         | -0.81%        | Yahoo Finance
+Nasdaq Composite (Jun 3 close) | 26,836         | -0.95%        | Yahoo Finance
+S&P 500 Futures (implied open) | 7,563          | +0.03%        | ImpliedOpen.com
+VIX                            | 16.31          | +3.42%        | Yahoo Finance
+10-Year Treasury Yield         | 4.47%          | +2 bps        | FRED / PrimeRates
+2-Year Treasury Yield          | 4.05%          | +7 bps        | FRED / PrimeRates
+30-Year Treasury Yield         | 4.99%          | 0 bps         | FRED / PrimeRates
+10Y-2Y Spread                  | +0.42 pp       | -5 bps        | PrimeRates
+WTI Crude Oil                  | $96.05/bbl     | +2.44%        | Trading Economics
+Brent Crude Oil                | $101.36/bbl    | +1.98%        | Fortune / CNBC
+Gold (spot)                    | $4,464/oz      | -1.19%        | Yahoo Finance
+Copper                         | $5.98/lb       | +7.32% (1mo)  | Trading Economics
+US Dollar Index (DXY)          | 99.49          | +0.27%        | Trading Economics
+EUR/USD                        | 1.165          | -0.8% (1mo)   | Trading Economics
+USD/JPY                        | 159.23         | Flat          | TradingView
+
+================================================================================
+SECTION 3: KEY THEMES
+================================================================================
+
+**1. Middle East Escalation Dominates Sentiment**
+The US launched "self-defense" strikes on Iran overnight after Iranian drones
+and ballistic missiles targeted ships and Gulf state infrastructure, including
+Kuwait's airport. Iran has suspended indirect negotiations with the US following
+Israeli strikes in Lebanon. This marks a significant deterioration from last
+week's ceasefire optimism. Brent crude surged past $100/bbl for the first time
+in four years, and the Strait of Hormuz crisis continues to threaten global
+energy supply chains. Bahrain and other GCC states face direct economic damage.
+
+**2. Oil Price Shock Feeds Inflation Anxiety**
+WTI crude at $96 and Brent above $101 represents a supply shock that directly
+challenges the disinflation narrative. The 5-year breakeven inflation rate has
+edged up to 2.54% and the 10-year breakeven to 2.40%. If oil stays above $100
+for an extended period, it will feed into core inflation readings and complicate
+the Fed's rate path. Energy stocks may benefit, but the broader market faces
+margin pressure and consumer spending headwinds.
+
+**3. Treasury Yields Rise Across the Curve -- Front End Leads**
+The 2-year yield jumped 7 bps to 4.05%, outpacing the 10-year's 2 bps rise to
+4.47%. The 10Y-2Y spread narrowed slightly to +0.42 pp but remains positive,
+indicating no recession signal. The front-end move reflects markets pricing out
+near-term rate cuts. The 30-year held steady at 4.99%, suggesting long-term
+growth expectations are not collapsing. The curve shape says: "higher for longer"
+is the base case.
+
+**4. Fed Rate Expectations: Cuts Priced Out**
+CME FedWatch shows a 98.4% probability of the Fed holding rates steady at the
+June 16-17 FOMC meeting. Markets have fully abandoned expectations for rate
+cuts in 2026, with some analysts now discussing the possibility of rate hikes
+if stagflation materializes. The combination of rising oil prices, firming
+inflation expectations, and a still-resilient labor market (JOLTS showed 7.62M
+job openings in April, well above the 6.89M consensus) gives the Fed no reason
+to ease.
+
+**5. AI Trade Remains the Structural Bull Case**
+Despite the geopolitical noise, the AI investment cycle continues to drive
+market leadership. HPE reported a record quarter driven by AI data center
+expansion. Alphabet's plan to raise $80 billion for AI infrastructure signals
+the capex supercycle is accelerating. The market's willingness to look past
+oil spikes and focus on AI is remarkable -- but it also creates concentration
+risk. Only 17% of S&P 500 members have outperformed the index over the past
+two years.
+
+**6. Dollar Strength and Yen Weakness**
+The DXY at 99.49 is up 0.27% on the day and 1.13% over the month, reflecting
+safe-haven flows and rate differentials. USD/JPY at 159.23 is pressing against
+the 160 level that could trigger intervention from the Bank of Japan. EUR/USD
+at 1.165 is on track for a monthly loss as ECB rate cut expectations diverge
+from the Fed's hold stance. Dollar strength is a headwind for emerging markets
+and US multinational earnings.
+
+**7. Gold Pullback After Record Run**
+Gold fell 1.19% to $4,464/oz after recently climbing above $4,500. The pullback
+appears to be profit-taking and dollar strength rather than a fundamental shift.
+Geopolitical risk and central bank buying remain structural supports. The
+$4,400-4,500 zone is now key support to watch.
+
+================================================================================
+SECTION 4: WHAT TO WATCH TODAY (June 4, 2026)
+================================================================================
+
+Event                              | Time (ET)  | Time (BKK) | Impact
+-----------------------------------|------------|------------|--------
+ADP National Employment Report     | 8:15 AM    | 7:15 PM    | HIGH
+  Consensus: +65K private jobs     |            |            |
+  Prior (May): -33K (revised)      |            |            |
+
+ISM Services PMI (May)             | 10:00 AM   | 9:00 PM    | HIGH
+  Consensus: ~53.5                 |            |            |
+  Prior (Apr): 53.6                |            |            |
+
+JOLTS Job Openings (April)         | 10:00 AM   | 9:00 PM    | MEDIUM
+  Prior: 7.62M (beat 6.89M est.)  |            |            |
+
+Factory Orders (April)              | 10:00 AM   | 9:00 PM    | LOW
+  Prior: +1.5%                     |            |            |
+
+Earnings:                          |            |            |
+  - Macy's (M) - BMO              | Pre-market |            | MEDIUM
+  - Dollar General (DG) - BMO     | Pre-market |            | MEDIUM
+  - Ulta Beauty (ULTA) - AMC      | After bell |            | MEDIUM
+  - Palo Alto Networks (PANW) AMC  | After bell |            | HIGH
+
+================================================================================
+SECTION 5: THE HARD TRUTH -- DAMODARAN LENS
+================================================================================
+
+You are watching a market that is being pulled in two directions by forces it
+cannot reconcile. On one side: the AI capex supercycle, which is real and
+transformative. On the other: a geopolitical oil shock that threatens to undo
+the entire disinflation progress of the past 18 months.
+
+Here is what you need to hear:
+
+**The market is underpricing the oil risk.** Brent above $100 is not a "supply
+disruption" -- it is a war premium. The Strait of Hormuz handles 20% of global
+oil transit. If Iran follows through on threats to close it, we are looking at
+$120-150/bbl oil, not $100. The market is pricing this as temporary. It may
+not be. Every $10 increase in oil prices shaves roughly 0.2-0.3% off US GDP
+growth and adds a similar amount to headline CPI.
+
+**The "AI saves all" narrative is creating dangerous concentration.** The S&P
+500's rally is being driven by a handful of mega-cap tech names. When only 17%
+of index members outperform the index, you do not have a healthy bull market --
+you have a momentum trade. If the AI capex cycle disappoints on any dimension
+-- returns on invested capital, timeline to monetization, or competitive
+dynamics -- the entire market has nowhere to hide.
+
+**The Fed is boxed in, and markets haven't accepted it yet.** With oil pushing
+inflation higher and the labor market still showing 7.6M job openings, the Fed
+cannot cut. But the market is still pricing in a soft landing where inflation
+magically returns to 2% while growth stays strong. Pick one. You cannot have
+$100 oil, 4.5% yields, and rate cuts simultaneously. Something has to give.
+
+**Your opportunity cost of sitting in cash is rising, but so is the risk of
+being fully invested.** The 3-month T-bill at 3.78% is a genuine alternative.
+If you are going to take equity risk in a war environment with oil at $100,
+you better have a thesis that justifies it -- not just "stocks always go up."
+
+**The Damodaran test:** If you cannot explain why your portfolio allocation
+makes sense in a world where oil is $120, the 10-year is 5%, and the Fed is
+on hold indefinitely, you do not have a strategy. You have a hope.
+
+================================================================================
+SECTION 6: WEEKLY ECONOMIC CALENDAR
+================================================================================
+
+Day        | Release                          | Time (ET)  | Impact
+-----------|----------------------------------|------------|--------
+Wednesday  | ADP Employment Report            | 8:15 AM    | HIGH
+June 4     | ISM Services PMI                 | 10:00 AM   | HIGH
+           | JOLTS Job Openings               | 10:00 AM   | MEDIUM
+           | Factory Orders                   | 10:00 AM   | LOW
+Thursday   | Initial Jobless Claims           | 8:30 AM    | MEDIUM
+June 5     | Trade Balance (April)            | 8:30 AM    | MEDIUM
+           | Productivity (Q1, revised)       | 8:30 AM    | LOW
+Friday     | Nonfarm Payrolls (May)           | 8:30 AM    | VERY HIGH
+June 6     | Unemployment Rate (May)          | 8:30 AM    | VERY HIGH
+           | Average Hourly Earnings (May)    | 8:30 AM    | HIGH
+           | Consumer Credit (April)          | 3:00 PM    | LOW
+Monday     | No major releases                |            | --
+June 9     |                                  |            |
+Tuesday    | NFIB Small Business Optimism     | 6:00 AM    | LOW
+June 10    | CPI (May)                        | 8:30 AM    | VERY HIGH
+Wednesday  | PPI (May)                        | 8:30 AM    | HIGH
+June 11    | Initial Jobless Claims           | 8:30 AM    | MEDIUM
+Thursday   | No major releases                |            | --
+June 12    |                                  |            |
+Friday     | Consumer Sentiment (Jun, prelim) | 10:00 AM   | MEDIUM
+June 13    |                                  |            |
+
+Next FOMC Meeting: June 16-17, 2026
+
+================================================================================
+Data compiled: June 4, 2026, ~6:00 AM ET
+Sources: Yahoo Finance, CNBC, Trading Economics, FRED (St. Louis Fed),
+         PrimeRates, CME FedWatch, Fortune, TradingView, ImpliedOpen.com
+================================================================================

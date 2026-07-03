@@ -1,0 +1,206 @@
+================================================================================
+  US PRE-MARKET BRIEFING - Friday, June 5, 2026
+  Generated: As of Thursday June 4, 2026 ~1:00 PM EDT (Markets Still Open)
+================================================================================
+
+SECTION 1: EXECUTIVE SUMMARY
+================================================================================
+
+US markets are sharply bifurcated as we head into Friday's crucial May jobs
+report. The Dow Jones surged to a fresh record high on Thursday, jumping over
+900 points (+1.8%) led by UnitedHealth, JPMorgan, and Walmart, while the
+Nasdaq slipped on a brutal Broadcom-led semiconductor selloff. AVGO plunged
+14% after a Q2 revenue miss and unchanged AI chip guidance, dragging the
+entire chip sector lower. Oil prices retreated from recent highs on hopes for
+a US-Iran deal to reopen the Strait of Hormuz, with WTI crude falling nearly
+4% to ~$92. Treasury yields edged lower across the curve. The VIX remains
+subdued at 15.5, suggesting complacency. All eyes now turn to Jobs Friday.
+
+================================================================================
+SECTION 2: MARKET SNAPSHOT
+================================================================================
+
+Asset                          | Level          | Change        | Source
+-------------------------------|----------------|---------------|------------------
+S&P 500                        | 7,583.5        | +29.8 (+0.4%) | Yahoo Finance
+Dow 30                         | 51,582         | +895 (+1.8%)  | Yahoo Finance
+Nasdaq Composite               | 26,822         | -31 (-0.1%)   | Yahoo Finance
+Russell 2000                   | 2,930          | +36 (+1.3%)   | Yahoo Finance
+VIX                            | 15.47          | -0.59 (-3.7%) | Yahoo Finance
+10-Year Treasury Yield         | 4.467%         | -2.4bp        | Yahoo Finance
+5-Year Treasury Yield          | 4.181%         | -3.3bp        | Yahoo Finance
+30-Year Treasury Yield         | 4.972%         | -1.8bp        | Yahoo Finance
+13-Week T-Bill                 | 3.620%         | -0.3bp        | Yahoo Finance
+WTI Crude Oil                  | $92.31         | -$3.71 (-3.9%)| Yahoo Finance
+Brent Crude Oil                | $94.74         | -$3.07 (-3.1%)| Yahoo Finance
+Gold (Aug)                     | $4,509.70      | +$42.80 (+1%) | Yahoo Finance
+Copper (Jul)                   | $6.529         | +$0.021 (+0.3%)| Yahoo Finance
+US Dollar Index (DXY)          | 99.34          | -0.19 (-0.2%) | Yahoo Finance
+EUR/USD                        | 1.1627         | +0.0024 (+0.2%)| Yahoo Finance
+USD/JPY                        | 159.97         | -0.03 (-0.02%)| Yahoo Finance
+Bitcoin                        | $63,413        | -$2,447 (-3.7%)| Yahoo Finance
+
+Data as of Thursday June 4, 2026 ~1:00 PM EDT. Markets still open.
+
+================================================================================
+SECTION 3: KEY THEMES
+================================================================================
+
+1. BROADCOM BLOWS UP THE AI TRADE (TEMPORARILY)
+Broadcom (AVGO) crashed 14% on Thursday after missing Q2 revenue expectations
+and maintaining its $100B AI chip sales forecast rather than raising it. The
+selloff cascaded through the entire semiconductor complex -- Arm Holdings and
+Micron both dropped over 5%, and the VanEck Semiconductor ETF (SMH) fell 2%.
+This is the first real crack in the AI trade since the March lows. The market
+has been pricing in perfection from AI names, and Broadcom just showed that even
+good isn't good enough when expectations are this elevated.
+
+2. ROTATION FROM TECH TO VALUE/DEFENSIVE
+The Dow hit a record high while the Nasdaq fell -- a textbook rotation. UnitedHealth
+jumped 5%, JPMorgan climbed 4%, Walmart rose 1%, and Eli Lilly gained 5%. Investors
+are moving out of crowded AI/tech positions and into banks, healthcare, and consumer
+staples. This is healthy market behavior in the short term but raises questions about
+whether the "narrow market" problem is being solved or just masked.
+
+3. MIDDLE EAST ESCALATION AND OIL VOLATILITY
+US-Iran tensions remain elevated. Iran struck Kuwait International Airport, and the
+US carried out "self-defense strikes" on Qeshm Island. The Strait of Hormuz remains
+effectively closed, threatening 20% of global oil supply. However, oil prices
+retreated sharply on Thursday (WTI -4%, Brent -3%) as traders bet on a diplomatic
+resolution. The oil market is now pricing in a ceasefire scenario. If talks fail,
+the $100+ level comes back fast.
+
+4. GOLD SURGES TO RECORDS ON INFLATION FEARS
+Gold hit $4,509/oz, up nearly 1% on the day, driven by accelerating US inflation
+and geopolitical hedging. The April PCE inflation print hit 3.8%, the highest since
+2023. Markets are now pricing in a ~40% chance of at least one Fed rate hike before
+year-end, a dramatic shift from three months ago when zero hikes were expected.
+Gold is the clear beneficiary of this "stagflation-lite" environment.
+
+5. BITCOIN IN FREE FALL
+Bitcoin plunged 3.7% to ~$63,400, extending its decline from recent highs. The
+crypto market is being squeezed by the stronger dollar, rising rate expectations,
+and a broader risk-off sentiment in speculative assets. The correlation with Nasdaq
+has reasserted itself after a brief decoupling.
+
+6. KEVIN WARSH ERA BEGINS AT THE FED
+The Senate confirmed Kevin Warsh as the 17th Fed Chair. His first FOMC meeting as
+chair is June 16-17. Warsh is perceived as more hawkish than Powell, and his
+arrival coincides with inflation re-accelerating. The blackout period for his
+first meeting begins Saturday, June 6. Markets will scrutinize every word from
+Fed speakers this week for clues about the new regime's reaction function.
+
+7. JOBS FRIDAY LOOMS LARGE
+Today's May nonfarm payrolls report is the main event. The April report showed
+sharp gains following a strong March, and February's decline looks like an outlier.
+Consensus expects another solid print. A hot number could reinforce rate hike
+expectations and pressure bonds and tech stocks. A weak number could reignite
+growth concerns but ease rate fears. Either way, expect volatility.
+
+================================================================================
+SECTION 4: WHAT TO WATCH TODAY (Friday, June 5, 2026)
+================================================================================
+
+TIME (ET)   | TIME (BKK) | EVENT
+-------------|------------|------------------------------------------
+8:30 AM      | 8:30 PM    | NONFARM PAYROLLS (May) -- KEY RELEASE
+             |            | Consensus: ~180-200K jobs
+             |            | Unemployment rate expected steady ~3.7%
+             |            | Average hourly earnings MoM ~0.3%
+8:30 AM      | 8:30 PM    | INITIAL JOBLESS CLAIMS (weekly)
+             |            | Previous: 225K
+10:00 AM     | 10:00 PM   | ISM SERVICES PMI (May)
+             |            | Critical read on services sector health
+10:00 AM     | 10:00 PM   | FACTORY ORDERS (April)
+3:00 PM      | 3:00 AM*   | Baker Hughes Rig Count (weekly)
+             |            | *Saturday in BKK
+
+MARKET IMPLICATIONS:
+- Nonfarm payrolls is the dominant risk event. A print above 250K would
+  reinforce stagflation fears (hot economy + sticky inflation = rate hikes).
+  A print below 100K would raise recession concerns but ease rate pressure.
+- ISM Services above 50 = expansion, supports soft landing narrative.
+- Watch for Fed speakers reacting to the data ahead of the June 16-17 FOMC.
+
+================================================================================
+SECTION 5: THE HARD TRUTH -- DAMODARAN LENS
+================================================================================
+
+Let me be blunt about what's happening here:
+
+THE MARKET IS PRICING IN PERFECTION AND CALLING IT A STRATEGY.
+The S&P 500 is at 7,583 -- near record highs -- while inflation is
+reaccelerating to 3.8%, the Fed is potentially hiking rates, the Middle East
+is on fire, and the AI trade just had its first real stumble. The VIX at 15.5
+is telling you the market thinks everything is fine. It's not.
+
+BROADCOM IS A CANARY, NOT AN ISOLATED EVENT.
+A 14% single-day drop in a mega-cap because guidance wasn't good enough tells
+you the bar is impossibly high. The entire AI complex -- NVDA, AMD, MU, ARM --
+is priced for 30-40% annual revenue growth sustained for years. One miss from
+one company and the whole sector bleeds. What happens when the next one misses?
+Or the next? You're not diversified if your "diversification" is 7 tech stocks
+all trading at 30-50x earnings.
+
+THE ROTATION IS A WARNING, NOT A BUY SIGNAL.
+Money moving from tech into JPMorgan and UnitedHealth isn't bullish -- it's
+defensive. Smart money is reducing risk into a jobs report that could go either
+way, with a new Fed chair about to take the wheel, in the middle of a war.
+If you're chasing the Dow's record high, ask yourself: are you buying strength,
+or are you late to a rotation that's already happened?
+
+OIL IS THE TAIL THAT WAGS THE DOG.
+WTI at $92 is still historically elevated. The "diplomatic resolution" trade
+that pulled oil off its highs is a bet on something that hasn't happened yet.
+If the Strait of Hormuz stays closed for another two weeks, we're looking at
+$100+ oil, which means higher inflation, which means the Fed hikes, which means
+equities reprice lower. You're underestimating this risk.
+
+THE FED PUT IS DEAD (FOR NOW).
+Kevin Warsh is not Jerome Powell. He's not going to pivot at the first sign of
+market stress. With inflation at 3.8% and rising, the Fed's hands are tied.
+The market is pricing in a 40% chance of a hike by year-end. That's not priced
+into equities. If that probability moves to 60-70%, the S&P 500 doesn't grind
+higher -- it drops 5-8% in a week.
+
+WHAT TO DO:
+1. Reduce mega-cap tech exposure. Take profits in names that are up 30%+ YTD.
+2. Add inflation protection: TIPS, commodities, gold miners.
+3. Raise cash. 5-10% cash position gives you optionality if Jobs Friday
+   triggers a volatility spike.
+4. Hedge with VIX calls or put spreads on QQQ. The VIX is cheap at 15.5.
+5. Don't chase the Dow. The rotation trade is already 2 days old.
+
+================================================================================
+SECTION 6: WEEKLY CALENDAR (June 1-5, 2026)
+================================================================================
+
+Day     | Time (ET) | Release                          | Impact
+--------|-----------|----------------------------------|--------
+Monday  | 10:00 AM  | ISM Manufacturing PMI (May)      | High
+Monday  | 10:00 AM  | Construction Spending (Apr)      | Medium
+Monday  | 11:50 PM  | Fed Speaker: Kashkari            | Medium
+Tuesday | 8:55 AM   | Fed Speaker: Hammack             | Medium
+Tuesday | 10:00 AM  | JOLTS Job Openings (Apr)         | High
+Wednesday| 8:15 AM  | ADP Employment Report (May)      | High
+Wednesday| 9:00 AM  | Fed Speaker: Barr                | Medium
+Wednesday| 10:00 AM  | ISM Services PMI (May)           | High
+Thursday| 8:30 AM   | Initial Jobless Claims           | Medium
+Thursday| --        | Broadcom Earnings (after close)  | High
+Friday  | 8:30 AM   | NONFARM PAYROLLS (May)           | VERY HIGH
+Friday  | 8:30 AM   | Unemployment Rate (May)          | VERY HIGH
+Friday  | 10:00 AM  | ISM Services PMI (May)           | High
+Friday  | 10:00 AM  | Factory Orders (Apr)             | Medium
+
+UPCOMING NEXT WEEK:
+- June 10: CPI Inflation (May) -- CRITICAL
+- June 11: PPI Inflation (May)
+- June 12: University of Michigan Sentiment (Jun prelim)
+- June 16-17: FOMC Meeting (Warsh's first as Chair)
+
+================================================================================
+  END OF BRIEFING
+  Sources: Yahoo Finance, CNBC, Reuters, Kiplinger, Trading Economics
+  Data as of: Thursday June 4, 2026 ~1:00 PM EDT
+  Next update: Friday June 5, 2026 (post-NFP)
+================================================================================

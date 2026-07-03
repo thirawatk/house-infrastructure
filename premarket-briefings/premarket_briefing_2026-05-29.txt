@@ -1,0 +1,244 @@
+================================================================================
+  US PRE-MARKET BRIEFING -- FRIDAY, MAY 29, 2026
+  Generated: 2026-05-29 ~04:15 ET / 15:15 BKK
+================================================================================
+
+-------------------------------------------------------------------------------
+  1. EXECUTIVE SUMMARY
+-------------------------------------------------------------------------------
+
+US equity futures are mixed heading into Friday's session, with the S&P 500
+futures essentially flat at 7,580.75 (-0.01%) while Nasdaq futures lag
+(-0.15%) and Dow futures edge up (+0.03%). The VIX has pulled back to 15.74,
+near its recent lows, suggesting complacency rather than panic. Treasury
+yields dropped across the curve Thursday -- the 10Y fell 6bps to 4.50% and
+the 2Y plunged 12bps to 4.01% as traders priced in softer growth. WTI crude
+is hovering near $89 on persistent Strait of Hormuz supply risks. Today picks
+up where Thursday left off: ISM Services PCE and wholesale inventories wrap up
+a data-heavy week, and the market will close the book on April inflation data
+at a time when the Fed's next move is increasingly uncertain.
+
+-------------------------------------------------------------------------------
+  2. MARKET SNAPSHOT
+-------------------------------------------------------------------------------
+
+  Asset               Level          Change          Source
+  ----               -----          ------          ------
+  S&P 500 Futures    7,580.75      -1.00 (-0.01%) Yahoo Finance (5/28 close)
+  Dow Futures        50,762.00     +16.00 (+0.03%) Yahoo Finance (5/28 close)
+  Nasdaq Futures     30,260.25     -46.75 (-0.15%) Yahoo Finance (5/28 close)
+  Russell 2000 Fut.  2,936.30      -5.50 (-0.19%) Yahoo Finance (5/28 close)
+  VIX                15.74         -0.55 (-3.38%)  Yahoo Finance / FRED
+  ----               -----          ------          ------
+  10Y Treasury       4.50%         -6 bps          FRED / PrimeRates (5/26 data)
+  2Y Treasury        4.01%         -12 bps         FRED / PrimeRates (5/26 data)
+  30Y Treasury       5.03%         -4 bps          FRED / PrimeRates (5/26 data)
+  10Y-2Y Spread     +49 bps       Steepened +6bp  PrimeRates
+  ----               -----          ------          ------
+  WTI Crude Oil      ~89.30        +0.72%           Investing.com (5/28 close)
+  Brent Crude Oil    91.67         -1.03%           Yahoo Finance
+  Gold               4,526.90      -5.50 (-0.12%)  Yahoo Finance
+  Copper             ~6.31/lb      +3.93% (month)  Trading Economics (5/22)
+  ----               -----          ------          ------
+  DXY (US Dollar)    ~98.50        Consolidating   Multiple sources
+  EUR/USD            1.1617        +0.2%            ECB (5/28 ref rate)
+  USD/JPY            ~159.18       +0.14%           TradingView / FXStreet
+  Bitcoin            73,280.54     +0.21%           Yahoo Finance
+
+  NOTE: Data dates noted per source. Some figures are as of 5/26 or 5/28
+  closing. Futures data from Yahoo Finance delayed quotes as of late 5/28.
+
+-------------------------------------------------------------------------------
+  3. KEY THEMES
+-------------------------------------------------------------------------------
+
+  **A. Yields Plunge on Growth Fears -- The Bond Market Is Talking**
+
+  Treasury yields fell sharply across the curve Thursday, with the 2Y dropping
+  12bps to 4.01% -- the biggest move on the curve. This "bull steepening"
+  (short end falling faster than long end) signals the market is pricing in
+  weaker growth and earlier Fed easing. The 10Y-2Y spread has now re-steepened
+  to +49bps from +43bps. This is NOT a recession signal per se, but it IS the
+  bond market saying that the soft GDP print (Q1 revised down to 1.6% annual,
+  with some estimates as low as 0.4% quarterly) is forcing a re-think of the
+  "no cuts in 2026" narrative.
+
+  **B. Core PCE Lands at 3.3% -- Sticky Inflation Complicates the Fed's Path**
+
+  Thursday's April core PCE came in at 3.3% YoY, exactly as expected. Headline
+  PCE rose 0.4% MoM vs March's 0.7%. While the MoM deceleration is welcome,
+  3.3% core is still well above the Fed's 2% target. The market now faces a
+  tension: bonds are rallying on growth weakness, but inflation data does not
+  give the Fed a clean mandate to ease. CME FedWatch shows ~70% probability
+  of a hold at June 16-17, ~28% chance of a cut. The base case is "higher
+  for even longer," and that itself is a risk to risk assets.
+
+  **C. Iran War & Strait of Hormuz -- The Conflict That Won't Fully Resolve**
+
+  The US-Iran ceasefire remains fragile. Iran's IRGC maintains de facto control
+  of the Strait of Hormuz, and the US Navy has been conducting escort
+  operations to reopen shipping lanes. The US has sanctioned the "Persian Gulf
+  Strait Authority" for extorting tolls. Most maritime traffic through the
+  Strait has been halted or severely disrupted since February. WTI crude at
+  $89 continues to embed a "Hormuz risk premium" of perhaps $15-20/barrel.
+  Any further escalation could spike oil to $100+, which would be a direct
+  shock to inflation expectations and consumer spending.
+
+  **D. Nvidia Earnings -- AI Euphoria Cooling Into Discipline**
+
+  Nvidia's earnings (reported May 21) beat estimates but the stock fell
+  post-earnings, suggesting the bar had been set impossibly high. The
+  "AI trade" is now selectively rotating: memory stocks (Micron, SK Hynix)
+  are rallying on HBM demand, while Nvidia itself faces concerns about
+  export restrictions and China demand. For the broader market, the key
+  question is whether AI capex can sustain earnings growth across the S&P
+  500 or whether it remains a narrow trade concentrated in a handful of
+  mega-caps. The Nasdaq underperformance in pre-market (-0.15%) is a small
+  tell.
+
+  **E. The Dollar Is Stuck in No Man's Land**
+
+  The DXY has been consolidating around the 98.0-98.50 range, caught between
+  two opposing forces: safe-haven demand from the Iran war pulling it up,
+  and rate-cut expectations pushing it down. EUR/USD at 1.1617 is relatively
+  stable, and USD/JPY at ~159 suggests the BoJ is in no hurry to intervene
+  again unless the pace of yen weakness accelerates. The dollar's direction
+  will likely be determined by the June FOMC meeting outcome -- a hawkish
+  hold sends DXY higher, a dovish pivot sends it lower.
+
+  **F. ISM Services and the "Last Big Data Point" Before May ISM Manufacturing**
+
+  Today's ISM Services PMI (the report covers May) is one of the last major
+  data points before the June 16-17 FOMC meeting. The services sector has been
+  the economy's growth engine, and any significant softening here would
+  accelerate rate-cut expectations. Analysts will watch the prices-paid
+  sub-index closely, as it feeds directly into the Fed's inflation dashboard.
+  Regional Fed data has shown prices-paid averaging 54.9, and PPI final
+  demand is already running at 6.0% YoY -- the inflation pipeline is NOT clean.
+
+  **G. Consumer Sentiment Remains Depressed**
+
+  The University of Michigan's consumer sentiment index started 2026 at
+  historically low levels (~54), reflecting anxiety about inflation, geopolitics,
+  and the housing market. Existing home sales fell 1.9% in April to their
+  worst level since 2009, with inventory surging 21% YoY. Mortgage rates near
+  7% continue to lock in the "golden handcuffs" effect for homeowners. Weak
+  housing + weak sentiment + tight credit = a consumer spending slowdown that
+  hasn't fully shown up in the data yet but is coming.
+
+-------------------------------------------------------------------------------
+  4. WHAT TO WATCH TODAY -- FRIDAY, MAY 29, 2026
+-------------------------------------------------------------------------------
+
+  Time (ET)   Time (BKK)  Event / Release                    Impact
+  --------   -----------  -------------                      ------
+  08:30      19:30        Personal Income & Spending (Apr)   Medium
+                                        - Core PCE deflator component
+
+  08:30      19:30        GDP Price Index - 2nd Est. (Q1)    Medium
+                                        - Implicit price deflator revision
+
+  09:45      20:45        Chicago PMI (May)                  Medium
+                                        - Early regional manufacturing read
+
+  10:00      21:00        ISM Services PMI (May)             HIGH
+                                        - Services sector health check
+                                        - Prices-paid sub-index critical
+
+  10:00      21:00        Wholesale Inventories (Apr)        Low
+
+  All Day     All Day      VIX watching: Is the calm sustainable?
+                                        - At 15.74, VIX is near bottom
+                                        - Low vol = rising complacency risk
+
+  NOTE: Friday is options expiry for many equity derivatives --
+  expect elevated volume and potential volatility spikes in the
+  last hour ("quad witching" effect on select names).
+
+-------------------------------------------------------------------------------
+  5. THE HARD TRUTH -- DAMODARAN LENS
+-------------------------------------------------------------------------------
+
+  Let's stop dancing around it. Here is what the data is actually telling you:
+
+  **The market is priced for a soft landing that is NOT in the data.**
+
+  The S&P 500 is trading near all-time highs. The VIX is at 15.74, near its
+  lowest levels of the year. And yet: Q1 GDP growth has been revised DOWN to
+  1.6% (annualized), core inflation is stuck at 3.3% (well above target),
+  the consumer is depressed, housing is in the worst shape since 2009, and
+  there is an active war constraining 20% of global oil transit. Where,
+  exactly, is the "soft landing" priced into equities?
+
+  **The bond market knows something the stock market won't admit.**
+
+  The 2Y Treasury dropping 12bps in a single session is not noise. It is a
+  sharp, deliberate repositioning by the deepest-pocketed players in global
+  finance. They are betting on growth deterioration. If they are right,
+  equities have a reckoning coming -- earnings estimates for H2 2026 will
+  need to be cut, and the multiple will compress. The bull steepening of the
+  yield curve has historically been a LEADING indicator of Fed cuts, and Fed
+  cuts have historically been a LEADING indicator of recession.
+
+  **The Fed is in a box, and June 17th is too far away.**
+
+  With core PCE at 3.3%, the Fed cannot credibly cut rates without looking
+  like they've abandoned their inflation mandate. But with growth decelerating
+  and the labor market showing cracks (jobless claims ticking up to 215K),
+  holding rates at 3.50-3.75% risks overtightening. The market is pricing
+  a June hold, but the DISCONNECT between what bonds are saying (cut) and
+  what inflation data says (can't cut) is a powder keg for volatility.
+
+  **Opportunity cost of sitting in "complacent" allocations.**
+
+  If you are 100% long equities and riding the AI wave, ask yourself: what
+  is your downside protection if the Hormuz situation escalates, if oil
+  spikes to $100+, or if June FOMC delivers a hawkish hold that punctures
+  rate-cut expectations? Cash is yielding 3.68% (3-month T-bill). Short-duration
+  bonds are paying 4%+ with minimal duration risk. The risk-adjusted return
+  of sitting in the front end of the Treasury curve is genuinely competitive
+  with equities at these valuations -- and you have dry powder for when the
+  correction comes.
+
+  **This is not a time for conviction. This is a time for optionality.**
+
+-------------------------------------------------------------------------------
+  6. WEEKLY ECONOMIC CALENDAR -- MAY 26-30, 2026
+-------------------------------------------------------------------------------
+
+  Day       Release                              Actual  Forecast  Impact
+  ---       -------                              ------  --------  ------
+  Mon 25    Memorial Day -- MARKETS CLOSED
+  Tue 26    FHFA Home Price Index (Mar)                  -         Low
+            S&P Case-Shiller HPI (Mar)                  -         Medium
+            Consumer Confidence (May)                   -         Medium
+            Dallas Fed Mfg Survey (May)                 -         Low
+  Wed 27    Durable Goods Orders (Apr)           +7.9%   +3.5%     HIGH
+            Dur. Goods ex-Transport (Apr)               +0.4%     Medium
+            Jobless Claims (week to May 23)     215K    210K      Medium
+            Pending Home Sales (Apr)                    -         Low
+  Thu 28    GDP - 2nd Estimate (Q1)                       1.6%      HIGH
+            Core PCE Price Index (Apr YoY)      3.3%    3.3%      HIGH
+            Core PCE Price Index (Apr MoM)              +0.2%     HIGH
+            Continuing Claims                          -         Low
+  Fri 29    Personal Income & Spending (Apr)             -         Medium
+            GDP Price Index - 2nd Est. (Q1)             -         Medium
+            Chicago PMI (May)                           -         Medium
+            ISM Services PMI (May)                      -         HIGH
+            Wholesale Inventories (Apr)                 -         Low
+  NEXT WEEK:                                           -
+  Mon Jun 1 ISM Manufacturing PMI (May)                   -         HIGH
+            Construction Spending (Apr)                 -         Medium
+  Tue Jun 2 JOLTS Job Openings (Apr)                     -         HIGH
+            Factory Orders (Apr)                        -         Medium
+  Wed Jun 3 ADP Employment (May)                         -         Medium
+            ISM Services PMI (May)                      -         Repeat?
+  Fri Jun 6 Non-Farm Payrolls (May)                      -         CRITICAL
+            Unemployment Rate (May)                     -         CRITICAL
+            Average Hourly Earnings (May)               -         HIGH
+
+================================================================================
+  SOURCES: Yahoo Finance, FRED/St. Louis Fed, PrimeRates, Trading Economics,
+  CME FedWatch, ECB, Investing.com, ExchangeRates.org, FXStreet, Reuters,
+  BBC, CNBC, Kitco, Kraken Economic Brief
+================================================================================

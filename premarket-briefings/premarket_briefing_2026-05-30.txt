@@ -1,0 +1,109 @@
+# US PRE-MARKET BRIEFING
+**Friday, May 30, 2026 — Prepared 10:00 AM BKK (May 29 11PM ET close data)**
+
+---
+
+## 1. EXECUTIVE SUMMARY
+
+Markets are in a holding pattern heading into Friday, caught between two forces: a potential US-Iran deal that could reopen the Strait of Hormuz and crash oil, versus a stock market priced for perfection at record highs. The S&P 500 closed above 7,200 for the first time in April and has kept climbing. WTI crude sits at ~$96/bbl on Hormuz blockade fears, but every headline about a deal sends oil plunging 3% intraday. VIX at 16.7 says nobody's hedging. This is the squeeze week — a Iran deal closes the oil premium and boosts equities; a collapse reverses both violently.
+
+---
+
+## 2. MARKET SNAPSHOT
+
+| Asset | Level | Change | Source/Date |
+|-------|-------|--------|-------------|
+| S&P 500 Futures (ESM26) | ~7,569 | +0.38% | Yahoo Finance, May 29 |
+| Nasdaq 100 Futures (NQM26) | ~30,047 | +0.42% | Yahoo Finance, May 29 |
+| Dow Jones Futures (YM) | ~50,699 | +0.04% | TradingView, May 29 |
+| 10Y Treasury Yield | 4.45% | -3 bps | Trading Economics, May 28 |
+| 2Y Treasury Yield | ~4.25% | — | Trading Economics |
+| 10Y-2Y Spread | ~-20 bps | Inverted | Calculated |
+| VIX | 16.76 | -0.09 | Yahoo Finance, May 28 close |
+| WTI Crude | $96.60 | +0.25% | Investing.com, May 29 |
+| Brent Crude | $103.54 | — | Oilprice.com, May 29 |
+| Gold Spot | $4,507 | -0.1% | Trading Economics, May 28 |
+| Copper (LME) | $13,600/t | +1.28% | LME, May 28 |
+| DXY | 99.0 | +0.04% | Investing.com |
+| EUR/USD | ~1.07 | — | Trading Economics |
+| USD/JPY | ~143 | — | Trading Economics |
+
+---
+
+## 3. KEY THEMES
+
+**A. Iran/Hormuz is THE Swing Factor**
+The Strait of Hormuz remains effectively blocked. ~25% of global seaborne oil and 20% of LNG transit through it. WTI at $96 embeds a $10-15/bbl war premium. Rubio said Hormuz will open "one way or another" — military action if diplomacy fails. Diplomatic deal talks are ongoing (deal could come within days per NYT). Markets whip between deal-optimism (stocks up, oil down) and escalation-fears (reverse).
+
+**B. S&P 500 at Records — Priced for Perfection**
+The index closed above 7,200 for the first time in April and has sustained it. April was the strongest month since 2020. But the rally is narrow — mega-cap tech-led. Equal-weighted S&P 500 has lagged meaningfully. When the top 10 stocks sneeze, the index catches a cold.
+
+**C. Oil at $96 Is Deflationary Waiting to Happen**
+If a Hormuz deal materializes, WTI could drop to $75-80 within days (the pre-crisis baseline). That's a 15-20% reversal that would hit energy stocks hard but boost airlines, chemicals, and consumer discretionary simultaneously. Positioning is wrong — long oil / short consumer trade is crowded.
+
+**D. Gold at $4,507 — Cooling After the Parabolic Run**
+Gold is off its all-time highs (~$4,572 on May 26) but remains up 35% over the past month. The correction is healthy and expected. Real rates decline on dovish Fed expectations + safe-haven demand = structural support. Gold is the hedge against a Hormuz deal going wrong.
+
+**E. Yield Curve Inversion Persists**
+10Y at 4.45%, 2Y around 4.25% — the curve remains inverted. The bond market is screaming recession risk even as stocks rally. This divergence has persisted for over 2 years now, longer than any modern inversion. Historically the bond market has eventually been right.
+
+**F. VIX at 16.7 — Complacency Near 3-Month Lows**
+Option pricing shows almost no demand for downside protection. The VIX term structure is flat to slightly backwardated in front months. When everyone's unhedged, a shock event (Iran deal collapse, geopolitical surprise) causes violent repositioning. This is NOT the time to be unhedged if you have concentrated positions.
+
+---
+
+## 4. WHAT TO WATCH TODAY (Friday May 30 / Saturday May 31 BKK)
+
+| Time (ET) | Event | Impact | Expected |
+|-----------|-------|--------|----------|
+| 8:30 AM ET / 7:30 PM BKK | Core PCE Price Index (MoM) | **CRITICAL** | +0.3% |
+| 8:30 AM ET / 7:30 PM BKK | Personal Income/Spending | Medium | +0.3% / +0.2% |
+| 9:45 AM ET / 8:45 PM BKK | Chicago PMI | Medium | 49.0 |
+| 10:00 AM ET / 9:00 PM BKK | U. Michigan Consumer Sentiment (final) | High | — |
+
+**Wildcard:** Iran deal announcement could drop at any moment. Monitor Reuters, NYT, and investinglive.com for breaking news on Hormuz.
+
+---
+
+## 5. THE HARD TRUTH (Damodaran Lens)
+
+You're paying for perfection on multiple fronts simultaneously, and reality doesn't do perfection.
+
+**The S&P 500 at 7,200+ demands:**
+- Continued AI/tech capex growth at 40%+ rates (possible but not guaranteed)
+- No recession (despite an inverted yield curve screaming one)
+- Stable-to-declining oil prices (despite a Hormuz blockade)
+- Fed rate cuts coming (despite sticky inflation)
+
+**The margin of safety is razor-thin.** At 7,200, the forward P/E on the S&P 500 is roughly 22-23x earnings. The historical average is ~16x. You're paying a 35-40% premium to fair value. Your expected return from here is approximately 4-5% nominal over the next decade — before inflation.
+
+**The crowding is dangerous:** Long AI, long mega-cap tech, short energy, short bonds. Any rotation triggers a cascade because there's no liquidity in the winner names when everyone runs for the exit simultaneously. VIX at 16.7% isn't pricing any of this.
+
+**What a DCF-focused investor sees:** Companies trading at 30-50x revenue with no profitability path (many of the "AI plays") will get repriced violently when growth slows even modestly. The market is pricing in 25%+ earnings growth indefinitely. It doesn't happen.
+
+**Actionable:** If you're not hedged, put some protection on before Friday's PCE print. A December VIX call or SPY put spread costs almost nothing at these vol levels but pays off massively if something breaks. The cost of insurance is at historic lows — that's exactly when you buy it.
+
+---
+
+## 6. WEEKLY CALENDAR (May 25 - May 30)
+
+| Day | Release | Actual/Expected | Impact |
+|-----|---------|-----------------|--------|
+| Mon (May 26) | Memorial Day — US Markets Closed | — | — |
+| Tue (May 27) | Consumer Confidence, Durable Goods | CB: — | Medium |
+| Wed (May 28) | FOMC Minutes Release | — | High |
+| Thu (May 29) | GDP (2nd revision), Initial Claims | GDP: — | High |
+| **Fri (May 30)** | **Core PCE, Michigan Sentiment, Chicago PMI** | **Pending** | **CRITICAL** |
+
+**Next Week Preview (June 2-6):**
+- Mon June 2: ISM Manufacturing PMI
+- Wed June 4: ADP Employment, ISM Services
+- Thu June 5: Initial Jobless Claims
+- Fri June 6: Nonfarm Payrolls, Unemployment Rate
+
+---
+
+*Data compiled from Yahoo Finance, Trading Economics, Investing.com, Barchart, FRED, LME.*
+*Not financial advice. This is research for educational purposes.*
+
+**Pre-Market Briefing | OWL for Tae | Generated 2026-05-30 10:00 AM BKK**

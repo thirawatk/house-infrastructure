@@ -1,0 +1,279 @@
+================================================================================
+           US PRE-MARKET BRIEFING - TUESDAY, JUNE 9, 2026
+================================================================================
+
+SECTION 1: EXECUTIVE SUMMARY
+
+================================================================================
+
+Wall Street heads into Tuesday with a schizophrenic risk picture. The S&P 500
+closed Monday at 7,428 (+0.60%) and the Nasdaq surged 1.27% as chip stocks
+staged a violent rebound from last week's $1T wipeout -- but this rally sits
+on a knife's edge. Oil spiked above $95 intraday (WTI hit $95.47) as the
+US-Iran war entered its 102nd day with fresh strikes on Gulf bases, while
+Treasury yields pushed higher with the 10Y at 4.56%. Today is the most
+important macro day of the year: May CPI drops at 8:30 AM ET. Consensus is
+2.4% YoY headline / 2.5% core, and anything above those numbers could blow
+up the June Fed cut narrative (currently 36% priced). On top of that, the
+ECB is expected to hike 25bps to 2.25% on Wednesday. The market is rallying
+on chip-stock euphoria while ignoring the fact that oil at $95+, sticky
+inflation, and a 10-month Treasury yield above 4.5% are fundamentally
+inconsistent with the rate-cut narrative. Watch for volume and conviction --
+or the lack thereof.
+
+================================================================================
+
+SECTION 2: MARKET SNAPSHOT
+
+================================================================================
+
+Asset                | Level       | Change       | Source
+---------------------------------------------------------------------------
+S&P 500              | 7,428.41    | +44.67 / +0.60%  | Yahoo Finance (close Mon)
+Dow Jones             | 50,856.72   | -10.06 / -0.02%  | Yahoo Finance (close Mon)
+Nasdaq Composite      | 26,035.96   | +326.52 / +1.27% | Yahoo Finance (close Mon)
+Russell 2000          | 2,869.31    | +35.81 / +1.26%  | Yahoo Finance (close Mon)
+E-mini S&P Futures    | 7,446.75*   | +46.25 / +0.62%  | Yahoo Finance (intraday*)
+US 10Y Treasury       | 4.556%      | +0.020 bps       | Yahoo Finance (intraday)
+US 30Y Treasury       | 5.03%       | +0.03 bps        | Yahoo Finance (intraday)
+US 5Y Treasury        | 4.289%      | +0.21%           | Yahoo Finance (intraday)
+VIX                   | 18.33       | -3.21 / -14.93%  | Yahoo Finance (intraday)
+Gold (COMEX)          | $4,364.70/oz| -$0.60 / -0.01% | Yahoo Finance (intraday)
+WTI Crude (NYMEX)     | $91.27/bbl  | +$0.73 / +0.81%  | Yahoo Finance (intraday)
+Brent Crude           | $94.37/bbl  | +$1.28 / +1.38%  | Yahoo Finance (intraday)
+Copper                | $6.32/lb    | +0.96%           | Trading Economics
+DXY (Dollar Index)    | 99.95       | -0.12 / -0.12%   | Yahoo Finance (intraday)
+EUR/USD              | ~1.1550     | EUR holding gains | StreetStats (June 5)
+USD/JPY              | 160.155     | -0.09%           | Yahoo Finance (intraday)
+Bitcoin              | $63,321     | +$1,193 / +1.92% | Yahoo Finance (intraday)
+13-Wk T-Bill          | 3.628%      | +0.08%           | Yahoo Finance (intraday)
+
+* E-mini futures data is from June 8 session; note Yahoo timestamp shows
+  "As of June 8 at 12:51 PM EDT" -- futures remain active in extended hours.
+  DXY and Treasury data are real-time Monday intraday quotes.
+  Data verified across Yahoo Finance, Trading Economics, StreetStats.
+  Timestamp: Monday June 8, 2026 ~3:00 PM ET (US market still open 2h57m).
+
+================================================================================
+
+SECTION 3: KEY THEMES
+
+================================================================================
+
+--- 1. CHIP STOCK REBOUND: THE $1T BOUNCE --------------------------------------------------------
+
+The semiconductor sector roared back Monday after a brutal $1 trillion selloff
+last week. The SOXX ETF surged 3.9%. Intel (INTC) surged +11.82% on reports
+Google will use its chipmaking services, while Micron (MU) jumped +10.30% and
+Lam Research (LRCX) +8.54%. Nvidia (NVDA) +1.70%, AMD +5.29%. Jensen Huang
+told investors they should be "very happy" -- but the bounce is happening
+against a backdrop of an escalating Iran war, oil near $95, and Treasury
+yields climbing. The snapback is technically-driven short-covering, not new
+conviction. The sector was down ~15% from highs before this bounce. Don't
+mistake a dead-cat bounce for a trend reversal.
+
+--- 2. US-IRAN WAR: THE STRAIT OF HORMUZ FACTOR -----------------------------------------------
+
+The war entered Day 102. Iran launched missiles at US bases in Kuwait and
+Bahrain over the weekend, and the US struck Iranian tankers in the Strait of
+Hormuz. Trump says both sides are "looking to agree an immediate truce" but
+Iran simultaneously warned of "other fronts." The Strait -- through which
+~20% of global oil and LNG flows -- remains effectively disrupted. The IEA
+calls this the "largest supply disruption in history" with Gulf output cut by
+14+ million bpd. WTI hit $95.47 intraday Monday before settling at $91.27.
+Brent at $94.37. The Pentagon told Congress the first week alone cost $11.3
+billion. This is the single biggest tail risk to the global economy, and the
+market is pricing in a ceasefire that hasn't materialized.
+
+--- 3. MAY CPI: TODAY'S MAIN EVENT ---------------------------------------------------------------
+
+May CPI drops at 8:30 AM ET today. Consensus: 2.4% YoY headline, 2.5% core.
+This is the most consequential data point since the war began because it
+determines whether the Fed can cut at the June 17 FOMC. Right now, CME
+FedWatch prices a 36% chance of a 25bp cut at the June meeting -- meaning
+the base case is hold at 3.50-3.75%. But the market is forward-looking: if
+CPI comes in at or below consensus, the cut probability rises and risk assets
+rally. If it prints hot (2.6%+), the cut narrative collapses, yields spike,
+and the equity rally reverses violently. Energy prices are the wild card --
+oil at $95 feeds directly into headline inflation. The market is set up for
+a binary outcome.
+
+--- 4. TREASURY YIELDS: THE INVERSION THAT WASN'T -----------------------------------------------
+
+The 10Y yield at 4.556% and the 30Y at 5.03% reflect a market that has
+largely given up on near-term rate cuts. The 13-week T-bill at 3.628% shows
+the front end is anchored by the Fed's current 3.50-3.75% target range. The
+5Y at 4.289% suggests the market expects rates to stay elevated for years.
+The 10Y-2Y spread has normalized (positive), but the absolute level of
+long-end yields is a headwind for equity valuations. At 7,428, the S&P 500's
+earnings yield is roughly 5.4% -- only ~50bps above the 10Y yield. That's
+the thinnest equity risk premium in years and leaves no margin for error.
+
+--- 5. GOLD: THE SILENT WARNING -------------------------------------------------------------------
+
+Gold at $4,365/oz is down from its January all-time high of $5,608 but still
+elevated by historical standards. The fact that gold is holding above $4,300
+despite a strong dollar (DXY ~100) and rising real yields tells you something:
+the market is hedging tail risks. Gold's 4% YTD decline from the ATH is
+profit-taking, not a loss of conviction. Central bank buying (especially from
+China, India, and emerging markets de-dollarizing) remains a structural
+support. If CPI prints hot, gold could rally back toward $4,500 as an
+inflation hedge. If the Iran ceasefire actually happens, gold loses its
+geopolitical premium and could drop to $4,100-4,200.
+
+--- 6. ECB: THE OTHER CENTRAL BANK ---------------------------------------------------------------
+
+The European Central Bank is expected to raise its deposit rate by 25bps to
+2.25% on Wednesday, June 11. Markets assign ~99% probability to this hike.
+The ECB is fighting its own inflation battle, and the rate divergence between
+the Fed (3.50-3.75%) and ECB (heading to 2.25%) is narrowing. EUR/USD at
+~1.1550 reflects relative euro strength. If the ECB hikes and the Fed holds
+(or cuts), the dollar could weaken further, which is marginally positive for
+US equities but negative for US bond holders.
+
+--- 7. SPACE IPO AND APPLE WWDC: DISTRACTION OR CATALYST? ----------------------------------------
+
+SpaceX's IPO is reportedly "well oversubscribed" with orders closing
+Wednesday. This is the most anticipated IPO in years and could suck liquidity
+out of secondary markets. Meanwhile, Apple (AAPL) kicks off WWDC today with
+a "second shot at its AI rollout" -- after the Siri/AI failures of 2025. AAPL
+closed +2.01% Monday in anticipation. If Apple delivers a credible AI
+narrative, it could re-rate the entire mega-cap tech complex. If it
+disappoints, the "Magnificent 7" trade gets another leg of underperformance.
+
+================================================================================
+
+SECTION 4: WHAT TO WATCH TODAY
+
+================================================================================
+
+Time (ET)  | Time (BKK) | Event
+------------------------------------------------------------------------
+8:30 AM    | 7:30 PM    | **MAY CPI RELEASE** (Headline YoY / Core YoY)
+                        | Consensus: 2.4% / 2.5%
+                        | This is THE main event. Binary outcome for Fed expectations.
+                        | Watch: energy component, shelter, core services ex-shelter
+9:00 AM    | 8:00 PM    | Apple WWDC 2026 keynote begins
+                        | Focus: AI integration across iOS, Siri overhaul, developer tools
+10:00 AM   | 9:00 PM    | NAHB Housing Market Index (June)
+                        | Consensus: 35 | Prior: 34
+2:00 PM    | 1:00 AM+1  | US Treasury 3Y Note Auction ($58B)
+                        | Watch bid-to-cover ratio and indirect bidder participation
+4:00 PM    | 3:00 AM+1  | US Consumer Credit (April)
+                        | Prior: $10.2B
+
+--- AFTER HOURS / OVERNIGHT ---------------------------------------------------------------
+
+China May Trade Data (Tuesday night/Wednesday morning BKK time)
+  - Exports and Imports YoY
+  - Watch for tariff impact signals
+
+ECB Rate Decision (Wednesday 7:45 AM ET / 6:45 PM BKK)
+  - Expected: +25bps to 2.25%
+  - Press conference at 8:30 AM ET
+
+US PPI (Wednesday 8:30 AM ET / 7:30 PM BKK)
+  - Producer Price Index for May
+
+US Initial Jobless Claims (Thursday 8:30 AM ET / 7:30 PM BKK)
+  - Weekly claims data
+
+FOMC Decision (Wednesday June 17)
+  - Rate decision + dot plot + press conference
+  - This is the real mega-event; CPI today sets the stage
+
+================================================================================
+
+SECTION 5: THE HARD TRUTH -- DAMODARAN LENS
+
+================================================================================
+
+Let me be blunt about what the market is getting wrong.
+
+**You are pricing a soft landing that hasn't happened yet.** The S&P 500 at
+7,428 is within 2.5% of its all-time high of 7,620. The Nasdaq is up 1.27%
+on the day. Chip stocks are bouncing 10-12% in a single session. This is not
+the behavior of a market that understands the risks. This is the behavior of
+a market that has been trained by 15 years of Fed put to buy every dip.
+
+Here is what you are ignoring:
+
+1. **Oil at $95 is inflationary. Period.** You cannot have crude at $95/bbl
+   and expect core goods disinflation to continue. The CPI energy component
+   will print hot today. And even if core CPI comes in at 2.5%, that is
+   nowhere near the Fed's 2% target. The market is celebrating a number that
+   is still 25bps above target as if it's a victory.
+
+2. **The Iran war is not priced.** WTI at $95 implies a significant risk
+   premium, but the S&P 500 is near ATHs. These two things cannot coexist
+   indefinitely. If the Strait of Hormuz remains disrupted for another month,
+   you are looking at $110-120 oil, which means recession. The market is
+   pricing a ceasefire that Trump says is "being negotiated" but that Iran
+   simultaneously denies. You are betting on hope, not fundamentals.
+
+3. **The equity risk premium is broken.** At 7,428, the S&P 500 earnings yield
+   is ~5.4%. The 10Y Treasury yields 4.56%. That's an equity risk premium of
+   ~80bps. Historically, the ERP averages 300-400bps. You are being
+   compensated almost nothing for taking equity risk. This is the definition
+   of overvaluation.
+
+4. **The Fed is not your friend.** The market prices a 36% chance of a June
+   cut. That means 64% odds of NO cut. And even if they cut, it's 25bps
+   from 3.75% to 3.50% -- still restrictive. The era of free money is over.
+   The 10Y yield at 4.56% tells you the bond market doesn't believe in
+   imminent easing. Stop listening to equity desks and start listening to the
+   bond market.
+
+5. **Chip stock euphoria is a trap.** Intel up 11.82% on a Google partnership
+   rumor? Micron up 10% on nothing new? These are short squeezes, not
+   fundamental re-ratings. The AI capex cycle is real, but the valuations
+   were already pricing in perfection before the selloff. A 10% bounce from
+   -15% drawdown does not make it cheap again.
+
+**What to do:** If you are long, take some chips off the table into this
+bounce. If CPI prints hot today, this rally reverses violently. If you are
+looking to add risk, wait for the CPI print and the FOMC before making any
+major allocation decisions. The next 7 days (CPI today, ECB Wednesday, PPI
+Wednesday, FOMC June 17) will define the next quarter of market direction.
+Do not front-run binary events with leveraged positions.
+
+================================================================================
+
+SECTION 6: WEEKLY CALENDAR (June 9-13, 2026)
+
+================================================================================
+
+Day       | Time (ET)  | Release                              | Impact
+------------------------------------------------------------------------
+Tuesday   | 8:30 AM    | CPI (May) - Headline & Core YoY      | **HIGH**
+Tuesday   | 10:00 AM   | NAHB Housing Index (June)            | Low
+Tuesday   | 2:00 PM    | 3Y Note Auction ($58B)              | Medium
+Tuesday   | 4:00 PM    | Consumer Credit (April)              | Low
+Wednesday | 7:45 AM    | ECB Rate Decision (+25bps expected)  | **HIGH**
+Wednesday | 8:30 AM    | PPI (May) - Producer Prices          | **HIGH**
+Wednesday | 8:30 AM    | ECB Press Conference (Lagarde)       | **HIGH**
+Wednesday | 2:00 PM    | 10Y Note Auction ($42B)             | Medium
+Thursday  | 8:30 AM    | Initial Jobless Claims (June 6)      | Medium
+Thursday  | 8:30 AM    | Import/Export Price Indexes          | Low
+Thursday  | 10:00 AM   | Wholesale Inventories (April)        | Low
+Thursday  | 2:00 PM    | 30Y Bond Auction ($26B)             | Medium
+Friday    | 8:30 AM    | University of Michigan Sentiment     | Medium
+Friday    | 10:00 AM   | Preliminary UoM Inflation Expect.    | Medium
+
+--- NEXT WEEK HEADLINERS --------------------------------------------------------
+
+Monday 6/16: Empire State Mfg Survey, NY Fed Mfg Index
+Tuesday 6/17: **FOMC RATE DECISION** + Dot Plot + Powell Press Conference
+                 Retail Sales (May), Housing Starts, Building Permits
+Wednesday 6/18: Industrial Production, Capacity Utilization
+Thursday 6/19:  Leading Economic Index, Philadelphia Fed Mfg Survey
+
+================================================================================
+
+Data Sources: Yahoo Finance, Trading Economics, CME FedWatch, StreetStats,
+Bureau of Labor Statistics, Reuters, Bloomberg, SeekingAlpha, BBC, Al Jazeera.
+
+Report generated: Tuesday, June 9, 2026 (data as of Monday June 8, ~3 PM ET)
+Next update: Post-CPI release Tuesday morning
+
+================================================================================

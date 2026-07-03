@@ -1,0 +1,226 @@
+================================================================================
+  US PRE-MARKET BRIEFING -- MONDAY, JUNE 8, 2026
+  Generated: 04:00 AM ET / 03:00 PM BKK
+================================================================================
+
+SECTION 1: EXECUTIVE SUMMARY
+--------------------------------------------------------------------------------
+
+Wall Street heads into the week reeling from the worst selloff in months. The
+S&P 500 plunged 2.64% on Friday to 7,383.74, the Dow shed 695 points to
+50,866.78, and the Nasdaq cratered 4.2% -- snapping a nine-week winning streak.
+The trigger: a surprisingly strong May jobs report (172K vs. 85K expected)
+that obliterated rate-cut hopes and reignited fears of a Fed hike. The VIX
+surged past 21 as the US-Iran war continues to disrupt 20% of global oil
+transit through the Strait of Hormuz. This week, all eyes are on Wednesday's
+CPI print -- the single most important data point for the Fed's June 17-18
+FOMC meeting. Futures are pointing to a modestly lower open.
+
+================================================================================
+SECTION 2: MARKET SNAPSHOT
+================================================================================
+
+Asset                          Level           Change      Source
+---------------------------------------------------------------------------
+S&P 500 (Fri Close)           7,383.74        -2.64%      CNBC/MarketWatch
+Nasdaq Composite (Fri Close)   [see note]      -4.20%      WSJ/Investopedia
+Dow Jones (Fri Close)          50,866.78       -1.35%      CNBC/Yahoo Finance
+S&P 500 Futures (ES=F)         ~7,346          -0.50%      Yahoo Finance
+Nasdaq 100 Futures (NQ=F)      ~[see note]     -0.60%      Yahoo Finance
+Dow Futures (Y=MF)             ~50,867         ~Flat       Yahoo Finance
+
+10-Year Treasury Yield         4.52%           +4 bps      Trading Economics
+2-Year Treasury Yield          4.15%           +10 bps     Trading Economics
+10Y-2Y Spread                  +0.37           Steepening  Calculated
+
+VIX                            21.51           +39.7%      MacroMicro/CNBC
+
+WTI Crude Oil                  $90.54/bbl      -2.69%      Trading Economics
+Brent Crude Oil                ~$96.09/bbl     -0.50%      FT Markets
+Gold (Spot)                    $4,415.83/oz    -1.34%      Forbes/KITCO
+Copper (LME Spot)              $6.26/lb        -3.80%      Trading Economics
+
+US Dollar Index (DXY)          ~98.50          Mixed       London Business News
+EUR/USD                        1.1641          +0.08%      Investing.com
+USD/JPY                        160.29          +0.21%      Yahoo Finance
+
+CME FedWatch (June FOMC)       98.4% Hold       Unchanged   Benzinga/CME
+
+================================================================================
+SECTION 3: KEY THEMES
+================================================================================
+
+**1. JOBS SHOCK RESETS RATE EXPECTATIONS**
+Friday's nonfarm payrolls printed at 172,000 -- more than double the 85,000
+consensus -- while unemployment held at 4.3%. The result crushed the
+narrative of a softening labor market that had been fueling rate-cut bets.
+CME FedWatch now prices a 98.4% probability of a June hold, with the first
+cut not fully priced until December. The 2-year yield jumped 10 bps to 4.15%,
+and the market is now debating whether the Fed might need to HIKE rather than
+cut. This is a material regime shift from just two weeks ago.
+
+**2. TECH/AI SELLOFF ACCELERATES**
+The Nasdaq's 4.2% Friday plunge was its worst single-day drop in months.
+Nvidia, the poster child of the AI trade, saw its market cap hover near $4.97
+trillion but is under pressure as investors question whether AI capex
+justification can survive a higher-for-longer rate environment. The
+"magnificent seven" cohort is now down significantly from February highs.
+Alphabet is dipping in premarket on AI spending concerns and antitrust
+pressure. The rotation out of momentum/growth into value/defensive is
+accelerating.
+
+**3. US-IRAN WAR & THE STRAIT OF HORMUZ CRISIS**
+The US-Israel coalition conflict with Iran has effectively blocked the Strait
+of Hormuz since February 28, disrupting roughly 20% of global oil transit.
+WTI crude has pulled back from recent highs near $98 to ~$90.54 on
+de-escalation hopes, but the structural supply risk remains. Iran has laid
+fewer than 10 mines but has struck an oil tanker and launched missiles toward
+Kuwait and Bahrain. Even a peace deal won't immediately restore full shipping
+flows. This is the single largest geopolitical risk to global markets in 2026.
+
+**4. SURGING TREASURY YIELDS & THE BOND SELL-OFF**
+The 10-year yield has risen to 4.52%, with the 2-year at 4.15%. The curve
+has steepened as the market prices in fewer cuts and potentially higher
+terminal rates. The WSJ Dollar Index rose 1.07% on the week to 96.60. The
+combination of strong jobs, sticky inflation expectations, and massive
+government borrowing (the tax cut bill is coming) is creating a perfect storm
+for bonds. TLT (20+ year Treasury ETF) is under severe pressure.
+
+**5. COMMODITY DEFLATION FLASH -- GOLD & COPPER SLIDE**
+Gold dropped below $4,420/oz on Friday, down over 3% for the week, as real
+yields surged and the dollar strengthened. Copper plunged 3.8% to $6.26/lb on
+growth concerns and the strong dollar. This is notable because copper is
+often seen as a barometer of global economic health. The commodity complex is
+sending mixed signals: oil is elevated on supply risk, but industrial metals
+and precious metals are selling off on demand/dollar concerns.
+
+**6. CHINA'S XI VISITS NORTH KOREA -- GEOPOLITICAL REALIGNMENT**
+Xi Jinping arrives in Pyongyang today (June 8) for a two-day state visit --
+his first trip to North Korea in nearly seven years and his first overseas
+trip of 2026. This follows separate summits with Trump and Putin, signaling
+Beijing's intent to reassert its alliance with Pyongyang amid deepening
+US-China tensions. The visit underscores the formation of a China-Russia-North
+Korea axis that has profound implications for Asian security, supply chains,
+and the US dollar's role in the region.
+
+**7. SPACEX IPO LOOMS -- JUNE 12 NASDAQ DEBUT**
+SpaceX is targeting a Nasdaq debut on June 12 under ticker SPCX, with a
+staggering valuation target of $1.77 trillion. The company generated $18.7
+billion in 2025 revenue (+33% YoY). This will be the largest IPO in history
+and could make Elon Musk the world's first trillionaire. The IPO market
+hasn't seen anything like this, and the debut will be a major sentiment test
+for high-growth/tech valuations in a rising rate environment.
+
+================================================================================
+SECTION 4: WHAT TO WATCH TODAY (MONDAY, JUNE 8)
+================================================================================
+
+Time (ET)   Time (BKK)   Event / Watch
+---------------------------------------------------------------------------
+04:00 AM    03:00 PM     US Premarket Open -- futures direction
+06:30 AM    05:30 PM     Fed Governor Waller speech (if scheduled)
+08:30 AM    07:30 PM     No major US economic data (light calendar)
+09:30 AM    08:30 PM     US Equity Market Open
+02:00 PM    01:00 AM+1   Xi Jinping arrives in Pyongyang (North Korea)
+Throughout   Throughout   US-Iran ceasefire negotiation updates
+Throughout   Throughout   Oil price action (WTI/Brent) on Hormuz news
+
+KEY FOCUS FOR TODAY:
+- Futures are pointing to a modestly lower open. Watch for any bounce
+  attempts or continued selling pressure from Friday's rout.
+- Xi's North Korea visit begins -- watch for joint statements that could
+  impact Asian markets and US-China relations.
+- Iran negotiation updates could swing oil prices significantly.
+- Light economic calendar means market will be driven by technicals,
+  geopolitics, and positioning ahead of Wednesday's CPI.
+
+================================================================================
+SECTION 5: THE HARD TRUTH -- DAMODARAN LENS
+================================================================================
+
+Let me be brutally honest about where we are:
+
+**The market has been living in a fantasy.** For nine consecutive weeks,
+stocks climbed on the twin narratives of AI-driven growth and imminent Fed
+cuts. Friday's reality check was overdue. The labor market is NOT weakening
+-- it's resilient at 4.3% unemployment. Inflation is NOT conquered -- core
+PCE is still running hot, and this week's CPI could confirm sticky price
+pressures. The idea that the Fed would cut rates 2-3 times in 2026 was always
+wishful thinking, and the market is now pricing what the data actually says:
+NO cuts for the foreseeable future.
+
+**The AI trade is facing its first real stress test.** For two years, the
+narrative was "AI will justify any valuation." But in a world where the
+10-year yield is 4.5%+ and the Fed is not cutting, the present value of
+distant future AI profits drops materially. Nvidia at 35x forward earnings
+is NOT cheap when risk-free rates are 4.5%. The market is starting to
+discipline growth stock valuations, and there's more pain ahead for
+overcrowded AI longs.
+
+**The US-Iran war is an underpriced tail risk.** WTI at $90 assumes a
+relatively quick resolution. But Iran has blocked the Strait of Hormuz for
+three months with no resolution in sight. If the conflict escalates or
+persists through summer, $120+ oil is plausible, which would be
+recessionary and inflationary simultaneously -- the worst possible
+combination for equities. The market is pricing this as a transient shock.
+It might not be.
+
+**The bond market is telling you something stocks refuse to hear.** With the
+10-year at 4.52% and rising, the bond market is saying that fiscal
+profligacy (the tax cut bill), persistent inflation, and strong growth mean
+higher rates for longer. Equities are ignoring this at their peril. The
+equity risk premium is compressing, and at some point, the arbitrage
+between risk-free 4.5% and equity returns becomes a headwind, not a tailwind.
+
+**What to do:** This is not the time to be heroic. Reduce beta. Trim AI/tech
+overweights. Add duration only if you believe the Fed will be forced to cut
+recession (not yet). Hold some cash. The next two weeks -- CPI on Wednesday,
+FOMC on June 17-18 -- will determine whether this is a buying opportunity
+or the beginning of a meaningful correction. Don't guess. Wait for the data.
+
+================================================================================
+SECTION 6: WEEKLY ECONOMIC CALENDAR (JUNE 8-12, 2026)
+================================================================================
+
+Day        Time (ET)   Release                    Consensus    Impact
+---------------------------------------------------------------------------
+MON 6/8    --          No major releases                       Low
+            All Day     Xi visits North Korea                  Med
+
+TUE 6/9    --          No major US releases                   Low
+            --          Fed speakers (monitor)                 Med
+
+WED 6/10   08:30 AM    CPI MoM (May)              0.3%         HIGH
+            08:30 AM    CPI YoY (May)              [est ~3.0%]  HIGH
+            08:30 AM    Core CPI MoM (May)         0.3%         HIGH
+            08:30 AM    Core CPI YoY (May)         [est ~3.2%]  HIGH
+            10:00 AM    Fed Chair Powell speaks                  HIGH
+
+THU 6/11   08:30 AM    Initial Jobless Claims      220K         Med
+            08:30 AM    PPI MoM (May)              [est 0.2%]   Med-High
+            08:30 AM    Core PPI MoM (May)         [est 0.2%]   Med
+            --          SpaceX IPO roadshow cont.               Med
+
+FRI 6/12   10:00 AM    U. of Mich. Consumer Sent.  [est]       Med
+            10:00 AM    U. of Mich. 1Y Inflation   [est]       Med
+            --          SpaceX IPO pricing/Nasdaq debut         High
+
+================================================================================
+DATA SOURCES & NOTES
+================================================================================
+
+Sources: CNBC, Yahoo Finance, MarketWatch, WSJ, Reuters, Trading Economics,
+Investing.com, Bloomberg, Benzinga, CME FedWatch, MacroMicro, Forbes,
+London Business News, FT Markets, BBC, The Diplomat
+
+- All prices as of Friday June 5, 2026 close unless otherwise noted.
+- Futures data reflects pre-market indications as of briefing generation.
+- BKK = Bangkok Time (UTC+7), ET = Eastern Time (UTC-4/5).
+- Nasdaq Composite close level: approximately 22,800 (estimated from 4.2%
+  decline; exact level from WSJ/Investopedia coverage).
+- The 10Y-2Y curve has turned positive/steepening, which historically
+  precedes economic acceleration but also reflects inflation risk premium.
+
+================================================================================
+  END OF BRIEFING -- OWL | ZOO | 2026-06-08
+================================================================================
