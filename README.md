@@ -75,12 +75,12 @@ ISP WAN
 
 ### Wireless
 
-| AP | Model | Role | SSIDs |
-|----|-------|------|-------|
-| AP1 | Xiaomi AX3600 | Entertainment zone | nt-nw5, nt-nw-stm, nt-nw-iot |
-| AP2 | Xiaomi AX3600 | Server / IoT zone | (used as trunk for LXCs) |
+| AP | Model | Role | SSIDs | Firmware |
+|----|-------|------|-------|----------|
+| AP1 | Xiaomi AX3600 | Entertainment zone | nt-nw5, nt-nw-stm, nt-nw-iot | OpenWrt 25.12.2 |
+| AP2 | Xiaomi AX3600 | Server / IoT zone | (used as trunk for LXCs) | OpenWrt 25.12.2 |
 
-Both APs run OpenWrt as dumb APs — no NAT, no DHCP (handled by router).
+Both APs run OpenWrt as dumb APs — no NAT, no DHCP (handled by router). Both online as of 2026-07.
 
 ---
 
@@ -91,9 +91,11 @@ Both APs run OpenWrt as dumb APs — no NAT, no DHCP (handled by router).
 | Spec | Detail |
 |------|--------|
 | **Model** | HP EliteDesk 800 G3 Mini |
-| **CPU** | Intel x86 with QuickSync iGPU |
+| **CPU** | Intel Core i5-6500 (4c/4t) @ 3.20GHz with QuickSync iGPU |
+| **RAM** | 32 GB DDR4 (~13 GB used by workloads) |
+| **PVE Version** | Proxmox VE 9.1.9 — single node (`node1`), no VMs, LXC-only |
 | **OS Drive** | 512GB Hiksemi E3000 M.2 NVMe SSD (`local-e3000-512gb`) |
-| **Data Drive** | 1TB Samsung EVO 960 SATA SSD (`ssd-vault`) |
+| **Data Drive** | 1TB Samsung 870 EVO SATA SSD (`local-samsung-1tb` + `ssd-vault-backup`) |
 | **NIC 1** | Onboard 1 GbE → Proxmox management / Web GUI |
 | **NIC 2** | Added 2.5 GbE → Production LAN bridge (all LXC traffic) |
 
@@ -129,55 +131,65 @@ Both APs run OpenWrt as dumb APs — no NAT, no DHCP (handled by router).
 
 ### LXC Inventory
 
-All containers run on **Node 1** (HP EliteDesk). OS/root on NVMe unless noted.
+All containers run on **Node 1** (`node1`). OS/root on NVMe unless noted. **12 LXCs, all running, all VLAN 20.**
 
-| CT ID | Name | Purpose | Storage | Network |
-|-------|------|---------|---------|---------|
-| 101 | cloudflared | Cloudflare Tunnels (public → local) | NVMe | VLAN 20 |
-| 102 | technitiumdns | Local DNS (ad-block + split-horizon) | NVMe | 10.10.20.22 |
-| 103 | caddy | Production reverse proxy (.xyz → .lan) | NVMe | VLAN 20 |
-| 105 | jump-ubuntu | SSH bastion / management gateway | NVMe | VLAN 20 |
-|| **301** | **hermes-ubuntu** | **AI agent platform (5 profiles)** | **NVMe** | **VLAN 20** |
-|| 302 | openwebui | Open WebUI for FA profile web access | NVMe | **10.10.20.32**, VLAN 20 |
-|| 401 | bentopdf | Self-hosted PDF editing | NVMe | VLAN 20 |
-| 402 | paperless | Document management engine (Paperless-NGX) | NVMe root / 1TB SATA data | VLAN 20 |
-| 404 | autocaliweb | Calibre-Web-Automated (eBook library + WebDAV) | NVMe + ssd-vault bind-mounts | 10.10.20.44 |
-| 501 | monitor | Infrastructure monitoring | NVMe | 10.10.20.51 |
+| CT ID | Name | Purpose | vCPU | RAM | Rootfs | IP |
+|-------|------|---------|-----:|----:|--------|----|
+| 101 | cloudflared | Cloudflare Tunnels (public → local) | 1 | 512 MB | 2G NVMe | 10.10.20.21 |
+| 102 | technitiumdns | Local DNS (ad-block + split-horizon) | 1 | 512 MB | 2G NVMe | 10.10.20.22 |
+| 103 | caddy | Production reverse proxy (.xyz → .lan) | 1 | 2 GB | 6G NVMe | 10.10.20.23 |
+| 301 | hermes-ubuntu | Hermes AI agent platform (9 profiles) | 4 | 12 GB | 100G NVMe | 10.10.20.31 |
+| 302 | openwebui | Open WebUI for FA profile web access | 2 | 2 GB | 10G NVMe | 10.10.20.32 |
+| 401 | bentopdf | Self-hosted PDF editing | 1 | 2 GB | 4G NVMe | 10.10.20.41 |
+| 402 | paperless | Document management (Paperless-NGX) | 1 | 3 GB | 12G NVMe | 10.10.20.42 |
+| 403 | joplin-server | Joplin sync server (Memory Palace) | 1 | 1 GB | 8G NVMe | 10.10.20.43 |
+| 404 | autocaliweb | Calibre-Web-Automated (eBook library + WebDAV) | 1 | 2 GB | 6G NVMe | 10.10.20.44 |
+| 501 | monitor | Prometheus + Grafana monitoring | 1 | 2 GB | 8G NVMe | 10.10.20.51 |
+| 502 | neo4j-life-graph | Neo4j graph DB (Life Graph astrology) | 2 | 2 GB | 12G NVMe | 10.10.20.52 |
+| 503 | hermes-mcp | Hermes infra MCP server (FastMCP, port 8080) | 1 | 1 GB | 8G NVMe | 10.10.20.53 |
+
+**Totals:** 17 vCPU allocated (4.25x oversubscribed on 4 cores), 30 GB RAM allocated of 32 GB.
+
+**Removed:** CT 105 (`jump-ubuntu`) deleted — 10.10.20.25 freed. SSH now goes direct to hosts.
 
 > **Note:** Heavy local LLM stacks (Ollama) have been intentionally deprecated to preserve host compute resources. Open WebUI (CT 302) connects to Hermes FA's API server instead.
 
 ### Storage Pools
 
-| Pool | Disk | Size | Purpose |
-|------|------|------|---------|
-| `local-e3000-512gb` | Hiksemi E3000 NVMe | 512 GB | OS, LXC root filesystems |
-| `ssd-vault` / `local-samsung-1tb` | Samsung EVO 960 SATA | 1 TB | App data, document storage, Calibre library, databases |
+| Pool | Type | Disk | Size | Used | Purpose |
+|------|------|------|------|-----:|---------|
+| `local-e3000-512gb` | zfspool | Hiksemi E3000 NVMe | 477 GB | 18% | OS, LXC root filesystems |
+| `local-samsung-1tb` | zfspool | Samsung 870 EVO SATA | 945 GB | 3.4% | App data, Paperless docs, Calibre library, databases |
+| `ssd-vault-backup` | dir | Samsung 870 EVO SATA | 945 GB | 3.4% | `vzdump` backup target (added 2026) |
+| `local` | dir | NVMe | 385 GB | 0.3% | ISO images, snippets |
 
 ### Future
 
 - **Node 2 + DAS:** Frigate NVR with USB-C passthrough for CCTV recording
 - **Additional LXCs:** As needed — home automation hub, media server, backup target
 
-### ⚠️ Action Required: Backup Storage
+### ⚠️ Backup Status: Partially Mitigated
 
-**Status: NOT YET PURCHASED — blocking proper backup setup.**
+**Progress since 2026-06:** `ssd-vault-backup` dir storage now exists on the Samsung 870 EVO — `vzdump` targets are available. **However, no backup jobs are scheduled yet** (`/etc/pve/jobs.cfg` is empty, no vzdump cron).
 
-Current Node 1 has no physically separate backup destination. The 1TB SATA SSD (`ssd-vault`) holds active app data (Paperless, Kavita library) — it is NOT available as a backup target. Backing up to the same machine provides no protection against hardware failure.
+**Remaining gaps:**
 
-**What to buy (either option):**
+1. **No scheduled jobs** — CT roots are not being backed up automatically
+2. **Same-disk risk** — `ssd-vault-backup` lives on the same Samsung SSD as app data. CT roots (NVMe → Samsung) ARE protected against NVMe failure, but Samsung-hosted app data (Paperless, Calibre) has no off-disk copy
+3. **No off-site copy** — theft/fire/flood still = total loss
+
+**Still recommended (either option):**
 
 | Option | Capacity | Purpose | Approx. Cost |
 |--------|----------|---------|-------------|
-| **USB external HDD/SSD** (2-4TB) | 2-4 TB | Node 1 `vzdump` backup destination + `rsync` offsite | ~฿1,500-3,500 |
+| **USB external HDD/SSD** (2-4TB) | 2-4 TB | Physically separate `vzdump` target + `rsync` offsite | ~฿1,500-3,500 |
 | **Expand DAS** (add disk to Node 2 enclosure) | 4+ TB | Shared backup target across both nodes | ~฿2,000-4,000 |
 
-**What gets backed up:**
-- 10 LXC configs + root filesystems via `vzdump` (zstd compressed) — ~20-40GB total
+**What should get backed up:**
+- 12 LXC configs + root filesystems via `vzdump` (zstd compressed) — ~20-40GB total
 - Paperless documents via `rsync`
 - Hindsight/PostgreSQL via `pg_dump`
 - Proxmox host config via `tar /etc/pve`
-
-**Until purchased:** Backup strategy is limited to on-machine snapshots only. No protection against NVMe/SATA failure, theft, or physical damage.
 
 ---
 
@@ -187,22 +199,37 @@ Runs in **LXC 301** on Proxmox Node 1.
 
 ### Profiles
 
-| Profile | User(s) | Purpose | Model |
-|---------|---------|---------|-------|
-| **buddy** | Tae | Primary agent, orchestrator | openrouter/owl-alpha |
-| **investor** | Tae | Investment analysis, multi-model | openrouter/owl-alpha |
-| **trader** | Tae | Market monitoring | openrouter/owl-alpha |
-| **monitor** | Tae | Infrastructure monitoring | openrouter/owl-alpha |
-| **financialanalyst** | Tae + Nhoo | Shared investment analysis | openrouter/owl-alpha |
+9 profiles, all running on Hermes Agent **v0.18.0**. Models are multi-provider (OpenRouter, Xiaomi, DeepSeek, Mistral, Z.AI, Moonshot, custom endpoints) and rotate — check live config for current assignments.
+
+| Profile | User(s) | Purpose |
+|---------|---------|---------|
+| **default** | Tae | System-wide config, cross-profile ops |
+| **buddy** | Tae | Primary agent, orchestrator |
+| **financialanalyst** | Tae + Nhoo | Shared investment analysis (FA bot) |
+| **investor** | Tae | Investment research |
+| **trader** | Tae | Market monitoring, paper trading |
+| **monitor** | Tae | Infrastructure monitoring (@TaeMonitoringbot) |
+| **astrology** | Tae | Life Graph astrology consultations |
+| **midwife-consultant** | Tae | Midwife consultation profile |
+| **book-reviewer** | Tae | Book review pipeline |
 
 ### Memory System
 
 - **Provider:** Self-hosted Hindsight API (`127.0.0.1:8888`)
 - **Mode:** `local_external` with external PostgreSQL 16 + pgvector
 - **Embedding:** `BAAI/bge-m3` (1024-dim, multilingual, Thai + English support)
-- **Storage:** `ssd-vault` (dedicated volume)
-- **Banks:** 7 banks via per-user Telegram ID isolation
-- **Hermes Version:** v0.14.0 (2026.5.16)
+- **Storage:** `local-samsung-1tb` (dedicated volume)
+- **Banks:** 12 banks (9 Tae profiles + Nhoo's banks), per-profile isolation
+- **Layer 3:** Joplin Memory Palace (CT 403) — shared cross-profile knowledge
+- **Hermes Version:** v0.18.0
+
+### Supporting Services
+
+| CT | Service | Role |
+|----|---------|------|
+| 302 | Open WebUI | Web frontend → Hermes FA API (10.10.20.32) |
+| 502 | neo4j-life-graph | Graph DB backing Life Graph astrology (10.10.20.52) |
+| 503 | hermes-mcp | Infra MCP server — Proxmox/service tools for all gateways (10.10.20.53:8080) |
 
 ### Infrastructure Services
 
@@ -244,4 +271,4 @@ Runs in **LXC 301** on Proxmox Node 1.
 
 ---
 
-*Last updated: 2026-06-05*
+*Last updated: 2026-07-26 (verified live against node1 — 12 LXCs, PVE 9.1.9)*
